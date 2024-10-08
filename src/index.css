@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@layer components {
+  body {
+    @apply font-Readex;
+  }
+  /* General */
+  .btn-primary {
+    @apply bg-[#090129] text-nowrap text-[#F5F8FF] hover:bg-[#3A3454] active:bg-[#3A3454] active:shadow-btn-primary-shadow transition-all duration-300 ease-in-out;
+  }
+  .btn-secondary {
+    @apply bg-[#EADDF9] text-nowrap text-black hover:bg-[#F1E8FB] active:bg-[#F1E8FB] active:shadow-btn-secondary-shadow transition-all duration-300 ease-in-out;
+  }
+  .btn-tertiary {
+    @apply bg-[#D5F379] text-nowrap text-black hover:bg-[#DDF594] active:bg-[#D5F379] active:shadow-btn-tertiary-shadow transition-all duration-300 ease-in-out;
+  }
+  .btn-gray-secondary {
+    @apply bg-white text-nowrap text-[#111322] border border-[#DCDFEA] hover:border-[#B9C0D4] active:border-[#DCDFEA] hover:bg-[#FCFCFD] active:bg-[#EFF1F5] disabled:bg-[#DCDFEA] disabled:text-[#B9C0D4] transition-all duration-300 ease-in-out;
+  }
+  .btn-error {
+    @apply bg-[#E62E05] text-nowrap text-[#FEFAF5] hover:bg-[#FF4405] active:bg-[#E62E05] active:shadow-btn-error-shadow transition-all duration-300 ease-in-out;
+  }
+
+  .btn-sm {
+    @apply py-2 px-4 rounded-lg;
+  }
+  .btn-md {
+    @apply py-3 px-6 rounded-xl;
+  }
+  .btn-lg {
+    @apply py-4 px-8 rounded-2xl;
+  }
+
+  .section-title {
+    @apply font-semibold text-[#111322] text-[40px] leading-normal;
+  }
+  .section-exc {
+    @apply font-medium text-[#4A5578] leading-normal;
+  }
+  /* End General */
+
+  /* Header  */
+  .nav-link {
+    @apply relative font-medium text-[#5A5570] hover:text-[#090129] hover:pb-2 transition-all duration-300 ease-in-out hover:before:bg-[#D1B6F1] before:absolute before:content-[''] before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-6 before:h-1 before:bg-transparent before:rounded-full;
+  }
+  .nav-link.active {
+    @apply text-[#090129] pb-2 before:bg-[#D1B6F1];
+  }
+  /* End Header  */
+
+  /* Subjects  */
+  .sub-icon {
+    @apply w-full h-[146px] flex items-center justify-center bg-red-50 rounded-[20px];
+  }
+  /* End Subjects  */
 }
