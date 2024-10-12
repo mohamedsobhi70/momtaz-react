@@ -19,6 +19,7 @@ const Home = () => {
         }
     }, [location]);
 
+   
     return <div>
         <Herosection />
         <Numbers />

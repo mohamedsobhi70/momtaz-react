@@ -26,7 +26,7 @@ const Subjects = () => {
                 className='w-full'
                 loop={true}
                 spaceBetween={36}
-                slidesPerView={6} // default number of slides for desktop
+                slidesPerView={2.5} // default number of slides for desktop
                 navigation={{ nextEl: '.sub-next-btn', prevEl: '.sub-prev-btn' }}
                 breakpoints={{
                     420: { slidesPerView: 2.5 }, // mobile

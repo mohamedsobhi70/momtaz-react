@@ -8,19 +8,19 @@
   }
   /* General */
   .btn-primary {
-    @apply bg-[#090129] text-nowrap text-[#F5F8FF] hover:bg-[#3A3454] active:bg-[#3A3454] active:shadow-btn-primary-shadow transition-all duration-300 ease-in-out;
+    @apply flex justify-center items-center bg-[#090129] text-nowrap text-[#F5F8FF] hover:bg-[#3A3454] active:bg-[#3A3454] active:shadow-btn-primary-shadow transition-all duration-300 ease-in-out;
   }
   .btn-secondary {
-    @apply bg-[#EADDF9] text-nowrap text-black hover:bg-[#F1E8FB] active:bg-[#F1E8FB] active:shadow-btn-secondary-shadow transition-all duration-300 ease-in-out;
+    @apply flex justify-center items-center bg-[#EADDF9] text-nowrap text-black hover:bg-[#F1E8FB] active:bg-[#F1E8FB] active:shadow-btn-secondary-shadow transition-all duration-300 ease-in-out;
   }
   .btn-tertiary {
-    @apply bg-[#D5F379] text-nowrap text-black hover:bg-[#DDF594] active:bg-[#D5F379] active:shadow-btn-tertiary-shadow transition-all duration-300 ease-in-out;
+    @apply flex justify-center items-center bg-[#D5F379] text-nowrap text-black hover:bg-[#DDF594] active:bg-[#D5F379] active:shadow-btn-tertiary-shadow transition-all duration-300 ease-in-out;
   }
   .btn-gray-secondary {
-    @apply bg-white text-nowrap text-[#111322] border border-[#DCDFEA] hover:border-[#B9C0D4] active:border-[#DCDFEA] hover:bg-[#FCFCFD] active:bg-[#EFF1F5] disabled:bg-[#DCDFEA] disabled:text-[#B9C0D4] transition-all duration-300 ease-in-out;
+    @apply flex justify-center items-center bg-white text-nowrap text-[#111322] border border-[#DCDFEA] hover:border-[#B9C0D4] active:border-[#DCDFEA] hover:bg-[#FCFCFD] active:bg-[#EFF1F5] disabled:bg-[#DCDFEA] disabled:text-[#B9C0D4] transition-all duration-300 ease-in-out;
   }
   .btn-error {
-    @apply bg-[#E62E05] text-nowrap text-[#FEFAF5] hover:bg-[#FF4405] active:bg-[#E62E05] active:shadow-btn-error-shadow transition-all duration-300 ease-in-out;
+    @apply flex justify-center items-center bg-[#E62E05] text-nowrap text-[#FEFAF5] hover:bg-[#FF4405] active:bg-[#E62E05] active:shadow-btn-error-shadow transition-all duration-300 ease-in-out;
   }
 
   .btn-sm {
@@ -62,10 +62,16 @@
 
   /* Header  */
   .nav-link {
-    @apply relative font-medium text-[#5A5570] hover:text-[#090129] hover:pb-2 transition-all duration-300 ease-in-out hover:before:bg-[#D1B6F1] before:absolute before:content-[''] before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-6 before:h-1 before:bg-transparent before:rounded-full;
+    @apply py-4 xl:py-0 border-b border-[#E6E6EA] xl:border-none relative font-medium text-[#5A5570] hover:text-[#090129] xl:hover:pb-2 transition-all duration-300 ease-in-out before:hidden xl:before:block xl:hover:before:bg-[#D1B6F1] xl:before:absolute xl:before:content-[''] xl:before:bottom-0 xl:before:left-1/2 xl:before:-translate-x-1/2 before:w-6 before:h-1 before:bg-transparent before:rounded-full flex items-center gap-4;
   }
   .nav-link.active {
-    @apply text-[#090129] pb-2 before:bg-[#D1B6F1];
+    @apply text-[#090129] xl:pb-2 xl:before:bg-[#D1B6F1];
+  }
+  .mobile-menu {
+    @apply fixed xl:static size-full lg:size-auto bg-white z-50 inset-0 grow flex flex-col opacity-0 invisible xl:visible xl:opacity-100 transition-all duration-300 ease-in-out;
+  }
+  .mobile-menu.active {
+    @apply opacity-100 visible;
   }
   /* End Header  */
 
