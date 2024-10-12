@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from '../../assets/images/logo.svg'
 
 const Footer = () => {
-  
+
   return <footer>
     <div className="py-16 bg-[#FAF8FE]">
       <div className="container grid grid-cols-1 lg:grid-cols-4 gap-12">
@@ -13,9 +13,9 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex flex-col gap-4">
-          <h6 className="text-[#8E8A9D] text-sm">
+          <h2 className="text-[#8E8A9D] text-sm">
             أهم الروابط
-          </h6>
+          </h2>
           <ul className="flex flex-col gap-4">
             <li>
               <Link to='/' className="font-medium text-[#090129]">
@@ -35,9 +35,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-4">
-          <h6 className="text-[#8E8A9D] text-sm">
+          <h2 className="text-[#8E8A9D] text-sm">
             استخدام المنصة
-          </h6>
+          </h2>
           <ul className="flex flex-col gap-4">
             <li>
               <Link to='/' className="font-medium text-[#090129]">
@@ -57,9 +57,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className="flex flex-col gap-4">
-          <h6 className="text-[#8E8A9D] text-sm">
+          <h2 className="text-[#8E8A9D] text-sm">
             روابط أخري
-          </h6>
+          </h2>
           <ul className="flex flex-col gap-4">
             <li>
               <Link to='/about' className="font-medium text-[#090129]">
@@ -76,7 +76,7 @@ const Footer = () => {
       </div>
     </div>
     <div className="bg-[#090129] py-6">
-      <div className="container flex items-center justify-between">
+      <div className="container flex flex-col md:flex-row items-center justify-center md:justify-between gap-4">
         <p className="text-[#DCDFEA] text-sm">
           كل الحقوق محفوظة @المنصة 2023
         </p>

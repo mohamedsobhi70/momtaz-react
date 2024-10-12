@@ -19,7 +19,7 @@ const Bestteachers = () => {
             </header>
             <Swiper
                 className='w-full'
-                loop={true}
+                // loop={true}
                 spaceBetween={24}
                 navigation={{ nextEl: '.bteacher-next-btn', prevEl: '.bteacher-prev-btn' }}
                 breakpoints={{
