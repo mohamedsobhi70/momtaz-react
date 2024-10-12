@@ -39,6 +39,25 @@
   .section-exc {
     @apply font-medium text-[#4A5578] leading-normal;
   }
+
+  .accordion-item {
+    @apply p-6 rounded-3xl border border-[#DCDFEA] flex items-start gap-6 cursor-pointer;
+  }
+  .accordion-item .accordion-title {
+    @apply text-[#090129] text-xl leading-normal font-semibold;
+  }
+  .accordion-item .accordion-content {
+    @apply text-[#5D6B98] leading-normal invisible opacity-0 transition-opacity duration-300 hidden;
+  }
+  .accordion-item .accordion-content.open {
+    @apply text-[#5D6B98] leading-normal visible opacity-100 block;
+  }
+  .accordion-item .accordion-icon {
+    @apply bg-[#E0CEF6] p-2 lg:p-2.5 rounded-[10px] lg:rounded-[14px] shrink-0;
+  }
+  .testimonials-item {
+    @apply !flex flex-col gap-12 bg-white rounded-3xl p-12 cursor-grab !h-auto;
+  }
   /* End General */
 
   /* Header  */

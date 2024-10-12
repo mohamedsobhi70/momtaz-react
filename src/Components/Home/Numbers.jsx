@@ -11,10 +11,10 @@ const Numbers = () => {
             <h2 className="text-center text-black text-2xl font-medium">
                 أرقامنا في صناعة تعليم أفضل.
             </h2>
-            <div className="grid grid-cols-1 lg:grid-cols-3">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-0">
                 {
                     ourNums.map(el =>
-                        <div key={el.num} className="flex flex-col gap-2 border-e border-[#8E8A9D] last:border-0">
+                        <div key={el.num} className="flex flex-col gap-2 border-e lg:border-[#8E8A9D] last:border-0">
                             <h3 className="text-center text-black text-5xl font-semibold">
                                 {el.num}
                             </h3>

@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import Subjects from "./Subjects";
 import Bestteachers from "./Bestteachers";
 import TestimonialSlider from "../Globals/TestimonialSlider";
+import Faqs from "../Globals/Faqs";
 
 const Home = () => {
     // To move to a specific section
@@ -24,6 +25,7 @@ const Home = () => {
         <Subjects />
         <Bestteachers />
         <TestimonialSlider/>
+        <Faqs/>
     </div>;
 };
 

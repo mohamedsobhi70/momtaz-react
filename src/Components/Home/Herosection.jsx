@@ -7,7 +7,7 @@ const Herosection = () => {
                     <h1 className="text-center text-white text-7xl leading-normal font-semibold">
                         أحجز حصة لأولادك مع
                         <span className="text-black relative inline-block py-1 px-2">
-                            <span className="bg-[#D5F379] rotate-6 rounded-2xl inline-block size-full absolute inset-1/2 -translate-y-1/2 translate-x-1/2"></span>
+                            <span className="bg-[#D5F379] rotate-6 rounded-2xl inline-block size-full absolute inset-1/2 -translate-y-1/2 rtl:translate-x-1/2 ltr:-translate-x-1/2"></span>
                             <span className="relative">
                                 أفضل
                             </span>

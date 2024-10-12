@@ -24,6 +24,7 @@ const Subjects = () => {
             </header>
             <Swiper
                 className='w-full'
+                loop={true}
                 spaceBetween={36}
                 slidesPerView={6} // default number of slides for desktop
                 navigation={{ nextEl: '.sub-next-btn', prevEl: '.sub-prev-btn' }}
@@ -36,70 +37,70 @@ const Subjects = () => {
             >
                 <SwiperSlide className='!flex flex-col gap-5'>
                     <div className="sub-icon bg-[#B9C0D4]"></div>
-                    <p className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
                         اللغة العربية
-                    </p>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className='!flex flex-col gap-5'>
                     <div className="sub-icon bg-[#9481AB] "></div>
-                    <p className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
                         اللغة الأنجليزية
-                    </p>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className='!flex flex-col gap-5'>
                     <div className="sub-icon bg-[#3A3454]">
                         <img src={sub3} alt="" />
                     </div>
-                    <p className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
                         الرياضيات
-                    </p>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className='!flex flex-col gap-5'>
                     <div className="sub-icon bg-[#BEA6DB]">
                         <img src={sub4} alt="" />
                     </div>
-                    <p className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
                         الكيمياء
-                    </p>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className='!flex flex-col gap-5'>
                     <div className="sub-icon bg-[#D5F379] ">
                         <img src={sub5} alt="" />
                     </div>
-                    <p className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
                         الفيزياء
-                    </p>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className='!flex flex-col gap-5'>
                     <div className="sub-icon bg-[#EADDF9]">
                         <img src={sub6} alt="" />
                     </div>
-                    <p className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
                         الأحياء
-                    </p>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className='!flex flex-col gap-5'>
                     <div className="sub-icon bg-[#5D6B98]">
                         <img src={sub7} alt="" />
                     </div>
-                    <p className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
                         الجغرافيا
-                    </p>
+                    </Link>
                 </SwiperSlide>
                 <SwiperSlide className='!flex flex-col gap-5'>
                     <div className="sub-icon bg-[#5D6B98]"></div>
-                    <p className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
                         الفلسفة
-                    </p>
+                    </Link>
                 </SwiperSlide>
             </Swiper>
             <div className="flex justify-between items-center">
                 <div className="flex items-center gap-5">
                     <button className='btn-gray-secondary btn-md sub-prev-btn px-3'>
-                        <img src={prv} alt="" />
+                        <img src={prv} alt="prev" className='ltr:rotate-180' width='20' height='20' />
                     </button>
                     <button className='btn-gray-secondary btn-md sub-next-btn px-3'>
-                        <img src={nxt} alt="" />
+                        <img src={nxt} alt="next" className='ltr:rotate-180' width='20' height='20' />
                     </button>
                 </div>
                 <Link to='subjects' className='btn-gray-secondary btn-md'>
