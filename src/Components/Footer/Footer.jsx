@@ -23,7 +23,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to='/' className="font-medium text-[#090129]">
+              <Link to='/#subjects' className="font-medium text-[#090129]">
                 المواد العلمية
               </Link>
             </li>
@@ -45,12 +45,12 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to='/' className="font-medium text-[#090129]">
+              <Link to='/#advantage' className="font-medium text-[#090129]">
                 مزايا المنصة
               </Link>
             </li>
             <li>
-              <Link to='/' className="font-medium text-[#090129]">
+              <Link to='/#faqs' className="font-medium text-[#090129]">
                 الأسئلة الشائعة
               </Link>
             </li>
@@ -78,7 +78,7 @@ const Footer = () => {
     <div className="bg-[#090129] py-6">
       <div className="container flex flex-col md:flex-row items-center justify-center md:justify-between gap-4">
         <p className="text-[#DCDFEA] text-sm">
-          كل الحقوق محفوظة @المنصة 2023
+          كل الحقوق محفوظة @ممتاز {new Date().getFullYear()} 
         </p>
         <ul className="flex items-center gap-6">
           <li>

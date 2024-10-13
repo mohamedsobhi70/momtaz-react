@@ -20,7 +20,7 @@ const Advantages = () => {
         }
     ]
 
-    return <section className="py-16 lg:py-20">
+    return <section className="py-16 lg:py-20" id='advantage'>
         <div className="container flex flex-col gap-12">
             <header className='flex flex-col gap-3'>
                 <h2 className="section-title text-center">

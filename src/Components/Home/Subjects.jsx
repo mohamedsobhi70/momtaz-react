@@ -11,7 +11,7 @@ import nxt from '../../assets/images/left-arrow.svg'
 import { Navigation } from 'swiper/modules';
 
 const Subjects = () => {
-    return <section className='bg-white py-20'>
+    return <section className='bg-white py-20' id='subjects'>
         <div className="container flex flex-col gap-12">
 
             <header className='flex flex-col gap-3'>
