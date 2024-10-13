@@ -38,8 +38,9 @@ const Bestteachers = () => {
                 navigation={{ nextEl: '.bteacher-next-btn', prevEl: '.bteacher-prev-btn' }}
                 breakpoints={{
                     420: { slidesPerView: 1.5 },
-                    768: { slidesPerView: 3 },
-                    1024: { slidesPerView: 4 },
+                    768: { slidesPerView: 2.5 },
+                    1024: { slidesPerView: 3.5 },
+                    1200: { slidesPerView: 4 },
                 }}
                 modules={[Navigation]}
             >

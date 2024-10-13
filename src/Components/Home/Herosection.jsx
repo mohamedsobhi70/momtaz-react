@@ -7,7 +7,7 @@ import shape5 from '../../assets/images/hero-shape-5.png'
 import shape6 from '../../assets/images/hero-shape-6.png'
 import shape7 from '../../assets/images/hero-shape-7.png'
 const Herosection = () => {
-    return <section className="min-h-[calc(100vh-66px)] xl:min-h-[calc(100vh-74px)] bg-[#090129] relative flex items-center">
+    return <section className="min-h-[calc(100vh-66px)] xl:min-h-[calc(100vh-74px)] bg-[#090129] relative flex items-center overflow-hidden">
         <img src={shape1} alt="shape" className='absolute hidden lg:block left-3/4 top-16 opacity-10' />
         <img src={shape2} alt="shape" className='absolute hidden lg:block right-1/4 top-80' />
         <img src={shape3} alt="shape" className='absolute hidden lg:block left-1/4 top-4' />

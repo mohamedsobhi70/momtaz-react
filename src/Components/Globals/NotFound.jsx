@@ -10,7 +10,7 @@ const NotFound = () => {
                     404 ERROR
                 </h2>
                 <p className="section-exc text-center">
-                    آسفين! الصفحة اللي تبحث عنها غير موجودة
+                    آسفين! الصفحة اللي تبحث عنها غير موجودة بالوقت الحالى 
                 </p>
             </div>
             <div className="flex flex-col md:flex-row gap-3 lg:gap-4">
