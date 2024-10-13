@@ -39,17 +39,10 @@ const Header = () => {
                             </span>
                             <img src={chevronleft} width='24' height='24' alt="chevronleft" className='xl:hidden' />
                         </NavLink>
-                        <NavLink to="/support" className="nav-link" onClick={() => setMenuopen(false)}>
+                        <NavLink to="/search-teacher" className="nav-link" onClick={() => setMenuopen(false)}>
                             <img src={user} width='24' height='24' alt="user" className='xl:hidden' />
                             <span className="grow">
-                                الدعم الفني
-                            </span>
-                            <img src={chevronleft} width='24' height='24' alt="chevronleft" className='xl:hidden' />
-                        </NavLink>
-                        <NavLink to="/about" className="nav-link" onClick={() => setMenuopen(false)}>
-                            <img src={user} width='24' height='24' alt="user" className='xl:hidden' />
-                            <span className="grow">
-                                من نحن
+                                أستكشف المعلمين
                             </span>
                             <img src={chevronleft} width='24' height='24' alt="chevronleft" className='xl:hidden' />
                         </NavLink>
@@ -60,10 +53,17 @@ const Header = () => {
                             </span>
                             <img src={chevronleft} width='24' height='24' alt="chevronleft" className='xl:hidden' />
                         </NavLink>
-                        <NavLink to="/search-teacher" className="nav-link" onClick={() => setMenuopen(false)}>
+                        <NavLink to="/about" className="nav-link" onClick={() => setMenuopen(false)}>
                             <img src={user} width='24' height='24' alt="user" className='xl:hidden' />
                             <span className="grow">
-                                أستكشف المعلمين
+                                من نحن
+                            </span>
+                            <img src={chevronleft} width='24' height='24' alt="chevronleft" className='xl:hidden' />
+                        </NavLink>
+                        <NavLink to="/support" className="nav-link" onClick={() => setMenuopen(false)}>
+                            <img src={user} width='24' height='24' alt="user" className='xl:hidden' />
+                            <span className="grow">
+                                الدعم الفني
                             </span>
                             <img src={chevronleft} width='24' height='24' alt="chevronleft" className='xl:hidden' />
                         </NavLink>
@@ -81,8 +81,12 @@ const Header = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to='/for-teachers' onClick={() => setMenuopen(false)}>
+                            <Link to='/for-teachers' className='btn-link gap-2' onClick={() => setMenuopen(false)}>
                                 للمعلمين
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path className="transition-all duration-300" d="M7.97508 4.94189L2.91675 10.0002L7.97508 15.0586" stroke="#3A3454" strokeWidth="1.25" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path>
+                                    <path className="transition-all duration-300" d="M17.0834 10H3.05835" stroke="#3A3454" strokeWidth="1.25" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path>
+                                </svg>
                             </Link>
                         </li>
                     </ul>

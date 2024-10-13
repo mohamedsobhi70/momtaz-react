@@ -17,7 +17,7 @@ const Herosection = () => {
         <img src={shape7} alt="shape" className='absolute hidden lg:block right-3/4 bottom-10' />
 
 
-        <div className="container py-48">
+        <div className="container py-48 relative">
             <div className="lg:w-2/3 mx-auto flex flex-col gap-8">
                 <div className="flex flex-col gap-4">
                     <h1 className="text-center text-white text-4xl lg:text-7xl leading-normal lg:leading-normal font-semibold">

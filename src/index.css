@@ -22,6 +22,15 @@
   .btn-error {
     @apply flex justify-center items-center bg-[#E62E05] text-nowrap text-[#FEFAF5] hover:bg-[#FF4405] active:bg-[#E62E05] active:shadow-btn-error-shadow transition-all duration-300 ease-in-out;
   }
+  .btn-link {
+    @apply flex justify-center items-center text-nowrap text-[#3A3454] hover:text-[#090129] active:text-[#8E8A9D] transition-all duration-300 ease-in-out;
+  }
+  .btn-link:hover path {
+    @apply stroke-[#090129]  transition-all duration-300;
+  }
+  .btn-link:active path {
+    @apply stroke-[#8E8A9D]  transition-all duration-300;
+  }
 
   .btn-sm {
     @apply py-2 px-4 rounded-lg;

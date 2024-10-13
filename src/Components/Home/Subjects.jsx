@@ -37,13 +37,13 @@ const Subjects = () => {
             >
                 <SwiperSlide className='!flex flex-col gap-5'>
                     <div className="sub-icon bg-[#B9C0D4]"></div>
-                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal transition-colors duration-300 hover:text-[#953DF5]">
                         اللغة العربية
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide className='!flex flex-col gap-5'>
                     <div className="sub-icon bg-[#9481AB] "></div>
-                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal transition-colors duration-300 hover:text-[#953DF5]">
                         اللغة الأنجليزية
                     </Link>
                 </SwiperSlide>
@@ -51,7 +51,7 @@ const Subjects = () => {
                     <div className="sub-icon bg-[#3A3454]">
                         <img src={sub3} alt="" />
                     </div>
-                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal transition-colors duration-300 hover:text-[#953DF5]">
                         الرياضيات
                     </Link>
                 </SwiperSlide>
@@ -59,7 +59,7 @@ const Subjects = () => {
                     <div className="sub-icon bg-[#BEA6DB]">
                         <img src={sub4} alt="" />
                     </div>
-                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal transition-colors duration-300 hover:text-[#953DF5]">
                         الكيمياء
                     </Link>
                 </SwiperSlide>
@@ -67,7 +67,7 @@ const Subjects = () => {
                     <div className="sub-icon bg-[#D5F379] ">
                         <img src={sub5} alt="" />
                     </div>
-                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal transition-colors duration-300 hover:text-[#953DF5]">
                         الفيزياء
                     </Link>
                 </SwiperSlide>
@@ -75,7 +75,7 @@ const Subjects = () => {
                     <div className="sub-icon bg-[#EADDF9]">
                         <img src={sub6} alt="" />
                     </div>
-                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal transition-colors duration-300 hover:text-[#953DF5]">
                         الأحياء
                     </Link>
                 </SwiperSlide>
@@ -83,13 +83,13 @@ const Subjects = () => {
                     <div className="sub-icon bg-[#5D6B98]">
                         <img src={sub7} alt="" />
                     </div>
-                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal transition-colors duration-300 hover:text-[#953DF5]">
                         الجغرافيا
                     </Link>
                 </SwiperSlide>
                 <SwiperSlide className='!flex flex-col gap-5'>
                     <div className="sub-icon bg-[#5D6B98]"></div>
-                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal">
+                    <Link to='/' className="text-center text-[#23262F] text-xl font-semibold leading-normal transition-colors duration-300 hover:text-[#953DF5]">
                         الفلسفة
                     </Link>
                 </SwiperSlide>

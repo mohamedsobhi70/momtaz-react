@@ -6,6 +6,7 @@ import Subjects from "./Subjects";
 import Bestteachers from "./Bestteachers";
 import TestimonialSlider from "../Globals/TestimonialSlider";
 import Faqs from "../Globals/Faqs";
+import Advantages from "../Globals/Advantages";
 
 const Home = () => {
     // To move to a specific section
@@ -19,14 +20,15 @@ const Home = () => {
         }
     }, [location]);
 
-   
+
     return <div>
         <Herosection />
         <Numbers />
         <Subjects />
         <Bestteachers />
-        <TestimonialSlider/>
-        <Faqs/>
+        <Advantages />
+        <TestimonialSlider />
+        <Faqs />
     </div>;
 };
 
