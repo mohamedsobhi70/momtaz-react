@@ -1,7 +1,7 @@
 import verify from '../../assets/images/verify.svg'
 import messages from '../../assets/images/messages.svg'
 import documentText from '../../assets/images/document-text.svg'
-const Advantages = () => {
+const Advantages = ({ iconColor }) => {
     const advantage = [
         {
             icon: verify,
@@ -35,7 +35,7 @@ const Advantages = () => {
 
                 {
                     advantage.map((el, index) => <div key={index} className='flex flex-col items-center gap-4 lg:gap-6 p-4'>
-                        <span className="bg-[#D5F379] p-3 rounded-[20px] flex items-center justify-center">
+                        <span className={`${iconColor === 'primary' ? 'bg-[#D1B6F1]' : ''} ${iconColor === 'tertiary' ? 'bg-[#D5F379]' : ''}  p-3 rounded-[20px] flex items-center justify-center`}>
                             <img src={el.icon} width="32" height="32" alt="verify icon" />
                         </span>
                         <h3 className="text-center text-[#000000E5] text-xl leading-normal lg:text-2xl lg:leading-normal font-semibold">

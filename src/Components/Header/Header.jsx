@@ -39,7 +39,7 @@ const Header = () => {
                             </span>
                             <img src={chevronleft} width='24' height='24' alt="chevronleft" className='xl:hidden' />
                         </NavLink>
-                        <NavLink to="/search-teacher" className="nav-link" onClick={() => setMenuopen(false)}>
+                        <NavLink to="/explore-teacher" className="nav-link" onClick={() => setMenuopen(false)}>
                             <img src={user} width='24' height='24' alt="user" className='xl:hidden' />
                             <span className="grow">
                                 أستكشف المعلمين

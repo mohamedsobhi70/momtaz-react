@@ -7,15 +7,14 @@ import shape5 from '../../assets/images/hero-shape-5.png'
 import shape6 from '../../assets/images/hero-shape-6.png'
 import shape7 from '../../assets/images/hero-shape-7.png'
 const Herosection = () => {
-    return <section className="min-h-[calc(100vh-66px)] xl:min-h-[calc(100vh-74px)] bg-[#090129] relative flex items-center overflow-hidden">
+    return <section className="min-h-[calc(100vh-66px)] xl:min-h-[calc(100vh-70px)] bg-[#090129] relative flex items-center overflow-hidden">
         <img src={shape1} alt="shape" className='absolute hidden lg:block left-3/4 top-16 opacity-10' />
         <img src={shape2} alt="shape" className='absolute hidden lg:block right-1/4 top-80' />
         <img src={shape3} alt="shape" className='absolute hidden lg:block left-1/4 top-4' />
-        <img src={shape4} alt="shape" className='absolute hidden lg:block right-3/4 top-20' />
+        <img src={shape4} alt="shape" className='absolute hidden lg:block left-0 xl:left-[10%] top-20' />
         <img src={shape5} alt="shape" className='absolute hidden lg:block left-3/4 bottom-20 opacity-10' />
         <img src={shape6} alt="shape" className='absolute hidden lg:block left-1/2 -translate-x-1/2 bottom-10 opacity-10' />
-        <img src={shape7} alt="shape" className='absolute hidden lg:block right-3/4 bottom-10' />
-
+        <img src={shape7} alt="shape" className='absolute hidden lg:block left-0 xl:left-[10%] bottom-10' />
 
         <div className="container py-48 relative">
             <div className="lg:w-2/3 mx-auto flex flex-col gap-8">

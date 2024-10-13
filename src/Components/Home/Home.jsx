@@ -21,15 +21,15 @@ const Home = () => {
     }, [location]);
 
 
-    return <div>
+    return <>
         <Herosection />
         <Numbers />
         <Subjects />
         <Bestteachers />
-        <Advantages />
+        <Advantages iconColor='tertiary' />
         <TestimonialSlider />
         <Faqs />
-    </div>;
+    </>;
 };
 
 export default Home;
