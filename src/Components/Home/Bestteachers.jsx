@@ -46,7 +46,7 @@ const Bestteachers = () => {
             >
                 {
                     bestTeachers.map((teacher) => {
-                        return <SwiperSlide key={teacher.id} className='!h-auto lg:p-4 !flex flex-col lg:gap-6 rounded-xl lg:rounded-3xl border lg:border-none border-[#E6E6EA] overflow-hidden hover:bg-white transition-all duration-300'>
+                        return <SwiperSlide key={teacher.id} className='!h-auto lg:p-4 !flex flex-col lg:gap-6 rounded-xl lg:rounded-3xl border lg:border-none border-[#E6E6EA] overflow-hidden hover:bg-white !transition-colors !duration-300 cursor-grab'>
                                 <Link to='' className="lg:rounded-2xl overflow-hidden relative">
                                     <span className="absolute w-full h-full top-0 left-0 bg-[#00000033]"></span>
                                     {teacher.img ?
