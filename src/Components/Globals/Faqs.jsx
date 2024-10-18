@@ -28,7 +28,7 @@ const Faqs = () => {
             content: "نعم .أقوم بتغيير البريد الإلكتروني الخاص بحسابي"
         },
     ]
-    return <section className="py-16 lg:py-24 bg-white" id="faqs">
+    return <section className="py-16 lg:py-24" id="faqs">
         <div className="container flex flex-col gap-16 lg:gap-24">
             <header className="flex flex-col gap-3">
                 <h2 className="section-title text-center">

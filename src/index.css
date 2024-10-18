@@ -7,6 +7,21 @@
     @apply font-Readex;
   }
   /* General */
+  .inpt-primary {
+    @apply text-[#111322] placeholder:text-[#7D89B0] border border-[#DCDFEA] focus:ring-0 focus:border-[#953DF5] transition-colors duration-300 ease-in-out;
+  }
+  .input-xs{
+    @apply ps-8 p-2 rounded-lg text-xs
+  }
+  .input-sm{
+    @apply ps-10 p-3 rounded-xl text-sm
+  }
+  .input-lg{
+    @apply ps-12 p-4 rounded-2xl text-sm
+  }
+  .inpt-primary:focus {
+    box-shadow: 0px 0px 0px 6px rgba(250, 248, 254, 1);
+  }
   .btn-primary {
     @apply flex justify-center items-center bg-[#090129] text-nowrap text-[#F5F8FF] hover:bg-[#3A3454] active:bg-[#3A3454] active:shadow-btn-primary-shadow transition-all duration-300 ease-in-out;
   }
@@ -43,20 +58,20 @@
   }
 
   .section-title {
-    @apply font-semibold text-[#111322] text-[40px] leading-normal;
+    @apply font-semibold text-[#111322] text-2xl lg:text-[40px] leading-normal lg:leading-normal;
   }
   .section-exc {
-    @apply font-medium text-[#4A5578] leading-normal;
+    @apply font-medium text-[#4A5578] leading-normal text-sm lg:text-base lg:leading-normal;
   }
 
   .accordion-item {
-    @apply p-6 rounded-3xl border border-[#DCDFEA] flex items-start gap-6 cursor-pointer;
+    @apply p-6 rounded-3xl border border-[#DCDFEA] flex items-start gap-6 cursor-pointer bg-white;
   }
   .accordion-item .accordion-title {
-    @apply text-[#090129] text-xl leading-normal font-semibold;
+    @apply text-[#090129] lg:text-xl leading-normal font-semibold;
   }
   .accordion-item .accordion-content {
-    @apply text-[#5D6B98] leading-normal invisible opacity-0 transition-opacity duration-300 hidden;
+    @apply text-[#5D6B98] text-sm lg:text-base leading-normal invisible opacity-0 transition-opacity duration-300 hidden;
   }
   .accordion-item .accordion-content.open {
     @apply text-[#5D6B98] leading-normal visible opacity-100 block;
@@ -67,6 +82,12 @@
   .testimonials-item {
     @apply !flex flex-col gap-12 bg-white rounded-3xl p-12 cursor-grab !h-auto;
   }
+
+  /* MUI  */
+  .MuiAccordionSummary-content {
+    @apply !m-0;
+  }
+  /* END MUI  */
   /* End General */
 
   /* Header  */

@@ -32,9 +32,9 @@ const Herosection = () => {
                     <div className="p-6 flex flex-col gap-3 bg-white shrink-0">
                         <div className="flex flex-col gap-1">
                             <h3 className="teacher-name text-[#090129] text-sm lg:text-xl leading-normal lg:leading-normal font-semibold">
-                                <a href="teacher-profile.html">
+                                <Link to='/'>
                                     أ/ عادل التهامي محمود
-                                </a>
+                                </Link>
                             </h3>
                             <div className="flex items-center gap-2">
                                 <span className="text-[#FAC515] flex items-center gap-1 text-sm leading-normal font-medium">

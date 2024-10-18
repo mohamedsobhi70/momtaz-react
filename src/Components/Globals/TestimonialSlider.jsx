@@ -36,7 +36,7 @@ const TestimonialSlider = () => {
                             <div className="size-24 rounded-[36px] overflow-hidden">
                                 <img src={test1} className="w-full h-full object-cover" width="96" height="96" alt="testimonials-1" />
                             </div>
-                            <p className="text-[#30374F] text-lg leading-relaxed">
+                            <p className="text-[#30374F] text-sm lg:text-lg leading-relaxed lg:leading-relaxed">
                                 “منصة التعلم الإلكترونية Momtaz قد غيرت تجربتي التعليمية بالفعل. الدروس التفاعلية والمحتوى المرئي المشوق يجعلان الدراسة ممتعة ويساعداني على فهم المفاهيم الصعبة بسهولة. واجهة المنصة سهلة الاستخدام وتصفحها بشكل بديهي، ويمكنني الوصول بسهولة إلى مواد الدورات ومتابعة تقدمي. أنصح بشدة بمنصة Momtaz لجميع الطلاب الذين يبحثون عن حلاً شاملاً وفعّالًا للتعلم الإلكتروني.”
                             </p>
                             <div className="flex items-center justify-between mt-auto">
@@ -52,7 +52,7 @@ const TestimonialSlider = () => {
                             <div className="size-24 rounded-[36px] overflow-hidden">
                                 <img src={test1} className="w-full h-full object-cover" width="96" height="96" alt="testimonials-1" />
                             </div>
-                            <p className="text-[#30374F] text-lg leading-relaxed">
+                            <p className="text-[#30374F] text-sm lg:text-lg leading-relaxed lg:leading-relaxed">
                                 “منصة التعلم الإلكترونية Momtaz قد غيرت تجربتي التعليمية بالفعل. الدروس التفاعلية والمحتوى المرئي المشوق يجعلان الدراسة ممتعة ويساعداني على فهم المفاهيم الصعبة بسهولة.
                             </p>
                             <div className="flex items-center justify-between mt-auto">
@@ -68,7 +68,7 @@ const TestimonialSlider = () => {
                             <div className="size-24 rounded-[36px] overflow-hidden">
                                 <img src={test1} className="w-full h-full object-cover" width="96" height="96" alt="testimonials-1" />
                             </div>
-                            <p className="text-[#30374F] text-lg leading-relaxed">
+                            <p className="text-[#30374F] text-sm lg:text-lg leading-relaxed lg:leading-relaxed">
                                 “منصة التعلم الإلكترونية Momtaz قد غيرت تجربتي التعليمية بالفعل. الدروس التفاعلية والمحتوى المرئي المشوق يجعلان الدراسة ممتعة ويساعداني على فهم المفاهيم الصعبة بسهولة. واجهة المنصة سهلة الاستخدام وتصفحها بشكل بديهي، ويمكنني الوصول بسهولة إلى مواد الدورات ومتابعة تقدمي. أنصح بشدة بمنصة Momtaz لجميع الطلاب الذين يبحثون عن حلاً شاملاً وفعّالًا للتعلم الإلكتروني.”
                             </p>
                             <div className="flex items-center justify-between mt-auto">
@@ -84,7 +84,7 @@ const TestimonialSlider = () => {
                             <div className="size-24 rounded-[36px] overflow-hidden">
                                 <img src={test1} className="w-full h-full object-cover" width="96" height="96" alt="testimonials-1" />
                             </div>
-                            <p className="text-[#30374F] text-lg leading-relaxed">
+                            <p className="text-[#30374F] text-sm lg:text-lg leading-relaxed lg:leading-relaxed">
                                 “منصة التعلم الإلكترونية Momtaz قد غيرت تجربتي التعليمية بالفعل. الدروس التفاعلية والمحتوى المرئي المشوق يجعلان الدراسة ممتعة ويساعداني على فهم المفاهيم الصعبة بسهولة.
                             </p>
                             <div className="flex items-center justify-between mt-auto">
@@ -100,7 +100,7 @@ const TestimonialSlider = () => {
                             <div className="size-24 rounded-[36px] overflow-hidden">
                                 <img src={test1} className="w-full h-full object-cover" width="96" height="96" alt="testimonials-1" />
                             </div>
-                            <p className="text-[#30374F] text-lg leading-relaxed">
+                            <p className="text-[#30374F] text-sm lg:text-lg leading-relaxed lg:leading-relaxed">
                                 “منصة التعلم الإلكترونية Momtaz قد غيرت تجربتي التعليمية بالفعل. الدروس التفاعلية والمحتوى المرئي المشوق يجعلان الدراسة ممتعة ويساعداني على فهم المفاهيم الصعبة بسهولة. واجهة المنصة سهلة الاستخدام وتصفحها بشكل بديهي، ويمكنني الوصول بسهولة إلى مواد الدورات ومتابعة تقدمي. أنصح بشدة بمنصة Momtaz لجميع الطلاب الذين يبحثون عن حلاً شاملاً وفعّالًا للتعلم الإلكتروني.”
                             </p>
                             <div className="flex items-center justify-between mt-auto">

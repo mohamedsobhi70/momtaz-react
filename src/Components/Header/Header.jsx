@@ -83,7 +83,7 @@ const Header = () => {
                         <li>
                             <Link to='/for-teachers' className='btn-link gap-2' onClick={() => setMenuopen(false)}>
                                 للمعلمين
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg className='ltr:rotate-180' width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path className="transition-all duration-300" d="M7.97508 4.94189L2.91675 10.0002L7.97508 15.0586" stroke="#3A3454" strokeWidth="1.25" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path>
                                     <path className="transition-all duration-300" d="M17.0834 10H3.05835" stroke="#3A3454" strokeWidth="1.25" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path>
                                 </svg>
