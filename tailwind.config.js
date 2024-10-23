@@ -12,6 +12,7 @@ module.exports = {
       },
       fontFamily: {
         Readex: ['Readex Pro', 'sans-serif'],
+        Tajawal: ['Tajawal', 'sans-serif'],
       },
       boxShadow: {
         'btn-primary-shadow': '0px 0px 0px 6px rgba(230, 230, 234, 1)',

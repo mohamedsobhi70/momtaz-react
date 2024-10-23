@@ -10,14 +10,14 @@
   .inpt-primary {
     @apply text-[#111322] placeholder:text-[#7D89B0] border border-[#DCDFEA] focus:ring-0 focus:border-[#953DF5] transition-colors duration-300 ease-in-out;
   }
-  .input-xs{
-    @apply ps-8 p-2 rounded-lg text-xs
+  .input-xs {
+    @apply ps-8 p-2 rounded-lg text-xs;
   }
-  .input-sm{
-    @apply ps-10 p-3 rounded-xl text-sm
+  .input-sm {
+    @apply ps-10 p-3 rounded-xl text-sm;
   }
-  .input-lg{
-    @apply ps-12 p-4 rounded-2xl text-sm
+  .input-lg {
+    @apply ps-12 p-4 rounded-2xl text-sm;
   }
   .inpt-primary:focus {
     box-shadow: 0px 0px 0px 6px rgba(250, 248, 254, 1);
@@ -120,4 +120,10 @@
   }
 
   /* End Service-item */
+
+  /* Teacher Card */
+  .teacher-card-img {
+    @apply overflow-hidden h-[515px] rounded-2xl relative before:content-[''] before:absolute before:size-full before:inset-0 before:bg-black before:opacity-30;
+  }
+  /* End Teacher Card */
 }

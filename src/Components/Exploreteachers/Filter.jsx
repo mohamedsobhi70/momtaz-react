@@ -6,8 +6,8 @@ import search from '../../assets/images/search-lg.svg'
 const Filter = () => {
 
     return <aside className='divide-y divide-[#E6E6EA] rounded-[32px] border border-[#E6E6EA] overflow-hidden h-fit lg:sticky lg:top-24'>
-        
-        <Accordion className='before:hidden !shadow-none p-6' disableGutters >
+
+        <Accordion className='before:hidden !shadow-none p-6' disableGutters defaultExpanded>
             <AccordionSummary
                 expandIcon={<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16.6004 7.45801L11.1671 12.8913C10.5254 13.533 9.47539 13.533 8.83372 12.8913L3.40039 7.45801" stroke="#090129" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
@@ -28,7 +28,7 @@ const Filter = () => {
         </Accordion>
 
 
-        <Accordion className='before:hidden !shadow-none p-6' disableGutters >
+        <Accordion className='before:hidden !shadow-none p-6' disableGutters defaultExpanded>
             <AccordionSummary
                 sx={{
                     '& .MuiAccordionSummary-content': {
@@ -48,7 +48,7 @@ const Filter = () => {
                 <div className="flex flex-col gap-6">
 
                     <div className="relative">
-                        <input type="search" name="search-sub" id="search-sub" placeholder='أبحث عن الصفوف والمعلمين.'
+                        <input type="search" name="search-sub" id="search-sub" placeholder='بحث'
                             className='w-full input-sm inpt-primary' />
                         <img src={search} alt="search" className='absolute start-3 top-1/2 -translate-y-1/2' />
                     </div>
@@ -79,7 +79,7 @@ const Filter = () => {
         </Accordion>
 
 
-        <Accordion className='before:hidden !shadow-none p-6' disableGutters >
+        <Accordion className='before:hidden !shadow-none p-6' disableGutters defaultExpanded>
             <AccordionSummary
                 sx={{
                     '& .MuiAccordionSummary-content': {
@@ -99,7 +99,7 @@ const Filter = () => {
                 <div className="flex flex-col gap-6">
 
                     <div className="relative">
-                        <input type="search" name="search-grade" id="search-grade" placeholder='أبحث عن الصفوف والمعلمين.'
+                        <input type="search" name="search-grade" id="search-grade" placeholder='بحث'
                             className='w-full input-sm inpt-primary' />
                         <img src={search} alt="search" className='absolute start-3 top-1/2 -translate-y-1/2' />
                     </div>
