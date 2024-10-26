@@ -123,7 +123,7 @@
 
   /* Teacher Card */
   .teacher-card-img {
-    @apply overflow-hidden h-[515px] rounded-2xl relative before:content-[''] before:absolute before:size-full before:inset-0 before:bg-black before:opacity-30;
+    @apply overflow-hidden aspect-[3/4] rounded-2xl relative before:content-[''] before:absolute before:size-full before:inset-0 before:bg-black before:opacity-30;
   }
   /* End Teacher Card */
 }

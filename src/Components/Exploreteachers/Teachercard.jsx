@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
-// import teacher from '../../assets/images/pop-teacher-1.jpg'
-import star from '../../assets/images/star.svg'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import star from '../../assets/images/star.svg'
+
 const Teachercard = ({ teacher }) => {
     const [isSelected, setIsSelected] = useState(false);
     const handleClick = () => { setIsSelected(!isSelected); };
@@ -14,7 +14,7 @@ const Teachercard = ({ teacher }) => {
                 <img src={teacher.image} alt="teacher" className='size-full object-cover' />
             </div>
             <div className="flex flex-col gap-2">
-                <Link to='/' className='text-[#090129] font-semibold line-clamp-1'>
+                <Link to={`/teacher-${teacher.id}`} className='text-[#090129] font-semibold line-clamp-1'>
                     {teacher.name}
                 </Link>
                 <div className="flex items-center gap-1">
