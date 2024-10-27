@@ -46,7 +46,6 @@
   .btn-link:active path {
     @apply stroke-[#8E8A9D]  transition-all duration-300;
   }
-
   .btn-sm {
     @apply py-2 px-4 rounded-lg text-sm font-medium;
   }
@@ -98,7 +97,7 @@
     @apply text-[#090129] xl:pb-2 xl:before:bg-[#D1B6F1];
   }
   .mobile-menu {
-    @apply fixed xl:static size-full lg:size-auto bg-white z-50 inset-0 grow flex flex-col opacity-0 invisible xl:visible xl:opacity-100 transition-all duration-300 ease-in-out;
+    @apply fixed xl:static size-full max-h-full lg:size-auto bg-white z-50 inset-0 grow flex flex-col opacity-0 invisible xl:visible xl:opacity-100 transition-all duration-300 ease-in-out;
   }
   .mobile-menu.active {
     @apply opacity-100 visible;

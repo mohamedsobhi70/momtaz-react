@@ -30,8 +30,8 @@ const Header = () => {
                         <span className="sr-only">Close Mobile Menu Icon</span>
                     </button>
                 </div>
-                <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-4 grow p-4 xl:p-0">
-                    <nav className='flex flex-col xl:flex-row xl:items-center xl:gap-6'>
+                <div className="flex flex-col xl:flex-row xl:items-center justify-between gap-4 h-full p-4 xl:p-0 shrink">
+                    <nav className='flex flex-col xl:flex-row xl:items-center xl:gap-6 h-full overflow-y-auto xl:overflow-visible shrink'>
                         <NavLink to="/" className="nav-link" onClick={() => setMenuopen(false)}>
                             <img src={user} width='24' height='24' alt="user" className='xl:hidden' />
                             <span className="grow">
