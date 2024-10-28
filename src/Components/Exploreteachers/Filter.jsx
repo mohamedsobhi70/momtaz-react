@@ -3,7 +3,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import { Accordion } from '@mui/material';
 import search from '../../assets/images/search-lg.svg'
 
-const Filter = ({ handleSearchTeacher, allGrades, allSubjects, allGenders, handleSearchSubject, handleSearchGrades }) => {
+const Filter = ({ handleSearchTeacher, allGrades, allSubjects, allGenders, handleSearchSubject, handleSearchGrades,handleSearchGenders }) => {
 
 
     return <aside className='divide-y divide-[#E6E6EA] rounded-[32px] border border-[#E6E6EA] overflow-hidden h-fit lg:sticky lg:top-24'>
@@ -58,7 +58,7 @@ const Filter = ({ handleSearchTeacher, allGrades, allSubjects, allGenders, handl
             </AccordionDetails>
         </Accordion>
 
-        <Accordion className='before:hidden !shadow-none p-6' disableGutters defaultExpanded>
+        <Accordion className='before:hidden !shadow-none p-6' disableGutters >
             <AccordionSummary
                 sx={{
                     '& .MuiAccordionSummary-content': {
@@ -111,7 +111,7 @@ const Filter = ({ handleSearchTeacher, allGrades, allSubjects, allGenders, handl
                     {
                         allGenders.map(gender =>
                             <li className='flex items-center gap-3' key={gender[0]}>
-                                <input type="checkbox" id={gender[0]} name="gender"
+                                <input type="checkbox" id={gender[0]} name="gender"  onChange={() => handleSearchGenders(gender[0])}
                                     className='!text-[#875BF7] focus:ring-transparent focus:!shadow-none rounded-md size-5 peer cursor-pointer' />
                                 <label htmlFor={gender[0]} className='text-[#8E8A9D] peer-checked:text-[#090129] transition-colors duration-300 ease-in-out font-medium grow line-clamp-1 cursor-pointer'>{gender[0]}</label>
                                 <span className='text-[#8E8A9D] peer-checked:text-[#090129] transition-colors duration-300 ease-in-out'>({gender[1]})</span>

@@ -281,3 +281,4 @@ export const teachers = [
         image: teacher20
     }
 ]
+

@@ -5,9 +5,12 @@ import { useCallback, useEffect, useState } from "react";
 
 const Exploreteachers = () => {
     const [filteredTeachers, setFilteredTeachers] = useState(teachers);
+
+    const [teacherName, setTeacherName] = useState('');
     const [selectedSubjects, setSelectedSubjects] = useState([]);
     const [selectedGrades, setSelectedGrades] = useState([]);
-    const [teacherName, setTeacherName] = useState('');
+    const [selectedGender, setSelectedGender] = useState([]);
+
 
     const subjectsWithCounts = [...new Set(teachers.flatMap(teacher => teacher.subjects))].sort()
         .map(subject => [
@@ -15,11 +18,13 @@ const Exploreteachers = () => {
             teachers.filter(teacher => teacher.subjects.includes(subject)).length
         ]);
 
+
     const gradesWithCounts = [...new Set(teachers.flatMap(teacher => teacher.grades))].sort()
         .map(grade => [
             grade,
             teachers.filter(teacher => teacher.grades.includes(grade)).length
         ]);
+
 
     const gendesrWithCounts = [...new Set(teachers.flatMap(teacher => teacher.gender))].sort()
         .map(gender => [
@@ -32,12 +37,15 @@ const Exploreteachers = () => {
         setFilteredTeachers(
             teachers.filter(teacher =>
                 (teacherName === '' || teacher.name.toLowerCase().includes(teacherName.toLowerCase())) &&
+                (selectedGender.length === 0 ||  selectedGender.includes(teacher.gender)) &&
                 (selectedSubjects.length === 0 || teacher.subjects.some(subject => selectedSubjects.includes(subject))) &&
                 (selectedGrades.length === 0 || teacher.grades.some(grade => selectedGrades.includes(grade)))
             )
         );
-    }, [teacherName, selectedSubjects, selectedGrades]);
+    }, [teacherName, selectedSubjects, selectedGrades, selectedGender]);
 
+
+    
     // Handle input for teacher name
     const handleSearchTeacher = (e) => {
         setTeacherName(e.target.value.trim());
@@ -59,6 +67,14 @@ const Exploreteachers = () => {
                 : [...prevGrade, grade]
         );
     };
+    // Handle grades selection for filtering
+    const handleSearchGenders = (gender) => {
+        setSelectedGender(prevGender =>
+            prevGender.includes(gender)
+                ? prevGender.filter(g => g !== gender)
+                : [...prevGender, gender]
+        );
+    };
 
     // Update filteredTeachers whenever teacherName or selectedSubjects change
     useEffect(() => {
@@ -75,6 +91,7 @@ const Exploreteachers = () => {
                     allSubjects={subjectsWithCounts}
                     handleSearchSubject={handleSearchSubject}
                     handleSearchGrades={handleSearchGrades}
+                    handleSearchGenders={handleSearchGenders}
                 />
 
                 {filteredTeachers.length === 0 ? (
