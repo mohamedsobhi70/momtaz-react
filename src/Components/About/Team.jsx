@@ -29,11 +29,11 @@ const Team = () => {
                 {
                     teamMembers.map(member =>
                         <li key={member.id} className="p-3.5 flex flex-col gap-4 bg-white rounded-[32px]">
-                            <div className="h-60 rounded-3xl overflow-hidden">
+                            <div className="rounded-3xl overflow-hidden aspect-square">
                                 {
                                     member.img ?
-                                        <img src={member.img} className="w-full h-full object-cover" width="261" height="261" alt="team member" /> :
-                                        <img src={noimg} className="w-full h-full object-cover" width="200" height="200" alt="team member" />
+                                        <img src={member.img} className="size-full object-cover" width="261" height="261" alt="team member" /> :
+                                        <img src={noimg} className="size-full object-cover" width="200" height="200" alt="team member" />
                                 }
 
                             </div>

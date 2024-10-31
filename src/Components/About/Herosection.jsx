@@ -33,7 +33,7 @@ const Herosection = () => {
                     </p>
                 </div>
                 <div className="aspect-[2/1] max-w-4xl lg:-mb-56 rounded-xl overflow-hidden relative">
-                    <div className="absolute top-0 left-0 w-full h-full bg-[#0000004d] flex items-center justify-center">
+                    <div className="absolute top-0 left-0 size-full bg-[#0000004d] flex items-center justify-center">
                         <button type="button">
                             <img src={play} width="64" height="64" alt="play" />
                             <span className="sr-only">Play Icon</span>

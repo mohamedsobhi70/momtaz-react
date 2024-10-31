@@ -6,6 +6,7 @@ import About from "./Components/About/About";
 import NotFound from "./Components/Globals/NotFound";
 import Forteachers from "./Components/Forteachers/Forteachers";
 import Exploreteachers from "./Components/Exploreteachers/Exploreteachers";
+import Support from "./Components/Support/Support";
 
 function App() {
 
@@ -13,14 +14,15 @@ function App() {
     <>
       <Header />
       <main>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/for-teachers" element={<Forteachers />} />
-        <Route path="/explore-teacher" element={<Exploreteachers />} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/for-teachers" element={<Forteachers />} />
+          <Route path="/explore-teacher" element={<Exploreteachers />} />
+          <Route path="/support" element={<Support />} />
 
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </main>
       <Footer />
     </>

@@ -2,6 +2,7 @@ import Filter from "./Filter";
 import Teachercard from "./Teachercard";
 import { teachers } from '../../data/dummy';
 import { useCallback, useEffect, useState } from "react";
+import notfound from '../../assets/images/404.png'
 
 const Exploreteachers = () => {
     const [filteredTeachers, setFilteredTeachers] = useState(teachers);
@@ -36,8 +37,8 @@ const Exploreteachers = () => {
     const filterTeachers = useCallback(() => {
         setFilteredTeachers(
             teachers.filter(teacher =>
-                (teacherName === '' || teacher.name.toLowerCase().includes(teacherName.toLowerCase())) &&
-                (selectedGender.length === 0 ||  selectedGender.includes(teacher.gender)) &&
+                (teacherName === '' || teacher.name.toLowerCase().includes(teacherName.toLowerCase())  ) &&
+                (selectedGender.length === 0 || selectedGender.includes(teacher.gender)) &&
                 (selectedSubjects.length === 0 || teacher.subjects.some(subject => selectedSubjects.includes(subject))) &&
                 (selectedGrades.length === 0 || teacher.grades.some(grade => selectedGrades.includes(grade)))
             )
@@ -45,7 +46,7 @@ const Exploreteachers = () => {
     }, [teacherName, selectedSubjects, selectedGrades, selectedGender]);
 
 
-    
+
     // Handle input for teacher name
     const handleSearchTeacher = (e) => {
         setTeacherName(e.target.value.trim());
@@ -94,15 +95,19 @@ const Exploreteachers = () => {
                     handleSearchGenders={handleSearchGenders}
                 />
 
-                {filteredTeachers.length === 0 ? (
-                    <p className="lg:col-span-2 border h-fit rounded-3xl p-8 text-center text-[#f73737] text-sm leading-5 lg:text-xl my-auto">
-                        لا يوجد معلمون تطابق بحثك.
-                    </p>
-                ) : (
+                {filteredTeachers.length > 0 ? (
                     <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 h-fit">
                         {filteredTeachers.map(teacher => (
                             <Teachercard key={teacher.id} teacher={teacher} />
                         ))}
+                    </div>
+                ) : (
+                    <div className="lg:col-span-2 border border-[#E62E05] bg-[#e62e05] bg-opacity-5 h-fit rounded-3xl p-8 flex flex-col items-center gap-8 ">
+                        <img src={notfound} width='592' height='395' alt="page-not-found" style={{filter:"drop-shadow(0px 0px 1px #E62E05)"}}/>
+
+                        <p className="text-center text-[#E62E05] leading-5 lg:text-2xl font-medium">
+                            لا يوجد معلمون تطابق بحثك.
+                        </p>
                     </div>
                 )}
             </div>

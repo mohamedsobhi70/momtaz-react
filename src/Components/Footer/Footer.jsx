@@ -67,7 +67,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to='/contact' className="font-medium text-[#090129]">
+              <Link to='/support' className="font-medium text-[#090129]">
                 تواصل معنا
               </Link>
             </li>

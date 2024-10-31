@@ -26,13 +26,13 @@ const About = () => {
         </p>
       </div>
       <div className="aspect-[2/1] overflow-hidden">
-        <img src={about} className="w-full h-full object-cover" width="1814" height="1020" alt="about us cover" />
+        <img src={about} className="size-full object-cover" width="1814" height="1020" alt="about us cover" />
       </div>
     </section>
     <Team />
     <Advantages iconColor="primary" />
     <Faqs />
-    <Cta/>
+    <Cta />
   </>;
 };
 

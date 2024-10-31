@@ -21,7 +21,7 @@ const Filter = ({ handleSearchTeacher, allGrades, allSubjects, allGenders, handl
             </AccordionSummary>
             <AccordionDetails className='!p-0 !pt-6'>
                 <div className="relative">
-                    <input type="search" name="search-teacher" id="search-teacher" placeholder='أبحث عن الصفوف والمعلمين.'
+                    <input type="search" name="search-teacher" id="search-teacher" placeholder='أبحث عن المعلمين.'
                         className='w-full input-sm inpt-primary' onChange={handleSearchTeacher} />
                     <img src={search} alt="search" className='absolute start-3 top-1/2 -translate-y-1/2' />
                 </div>

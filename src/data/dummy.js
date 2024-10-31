@@ -7,17 +7,10 @@ import teacher6 from "../assets/images/tacher-2.png"
 import teacher7 from "../assets/images/tacher-3.png"
 import teacher8 from "../assets/images/tacher-4.png"
 import teacher9 from "../assets/images/team-3.png"
-import teacher10 from "../assets/images/team-2.png"
-import teacher11 from "../assets/images/team-3.png"
-import teacher12 from "../assets/images/team-4.png"
-import teacher13 from "../assets/images/team-1.png"
-import teacher14 from "../assets/images/team-3.png"
-import teacher15 from "../assets/images/team-2.png"
-import teacher16 from "../assets/images/team-1.png"
-import teacher17 from "../assets/images/team-3.png"
-import teacher18 from "../assets/images/team-4.png"
-import teacher19 from "../assets/images/team-3.png"
-import teacher20 from "../assets/images/team-2.png"
+import teacher10 from "../assets/images/team-4.png"
+import teacher13 from "../assets/images/team-3.png"
+import teacher14 from "../assets/images/team-1.png"
+import teacher18 from "../assets/images/team-1.png"
 
 export const teachers = [
     {
@@ -141,7 +134,7 @@ export const teachers = [
         id: 10,
         name: 'أ/ هناء عبد الرحمن',
         subjects: ["الكيمياء", "الأحياء"],
-        grades: ["الصف السادس", "الصف الثاني عشر"],
+        grades: ["الصف السادس", "الصف الثانى"],
         rate: 4.7,
         ratingno: 520,
         gender: "أنثى",
@@ -154,14 +147,14 @@ export const teachers = [
         id: 11,
         name: 'أ/ خالد عبد الله',
         subjects: ["الرياضيات", "الفيزياء"],
-        grades: ["الصف الأول الثانوي", "الصف العاشر"],
+        grades: ["الصف الأول", "الصف العاشر"],
         rate: 3.9,
         ratingno: 329,
         gender: "ذكر",
         country: "الكويت",
         city: "الكويت",
         location: "الفروانية",
-        image: teacher11
+        image: ''
     },
     {
         id: 12,
@@ -174,7 +167,7 @@ export const teachers = [
         country: "مصر",
         city: "الجيزة",
         location: "الشيخ زايد",
-        image: teacher12
+        image: ''
     },
     {
         id: 13,
@@ -213,20 +206,20 @@ export const teachers = [
         country: "المملكة العربية السعودية",
         city: "الرياض",
         location: "الخزامى",
-        image: teacher15
+        image: ''
     },
     {
         id: 16,
         name: 'أ/ ليلى سالم',
         subjects: ["اللغة العربية", "التاريخ"],
-        grades: ["الصف الثاني عشر", "الصف العاشر"],
+        grades: [ "الصف العاشر"],
         rate: 4.0,
         ratingno: 102,
         gender: "أنثى",
         country: "البحرين",
         city: "المنامة",
         location: "السيف",
-        image: teacher16
+        image: ''
     },
     {
         id: 17,
@@ -239,7 +232,7 @@ export const teachers = [
         country: "الأردن",
         city: "الزرقاء",
         location: "الزرقاء الجديدة",
-        image: teacher17
+        image: ''
     },
     {
         id: 18,
@@ -258,14 +251,14 @@ export const teachers = [
         id: 19,
         name: 'أ/ حسين عبد القادر',
         subjects: ["التاريخ", "الفيزياء"],
-        grades: ["الصف العاشر", "الصف الثاني عشر"],
+        grades: ["الصف العاشر"],
         rate: 4.5,
         ratingno: 412,
         gender: "ذكر",
         country: "مصر",
         city: "الإسكندرية",
         location: "محرم بك",
-        image: teacher19
+        image: ''
     },
     {
         id: 20,
@@ -278,7 +271,7 @@ export const teachers = [
         country: "الإمارات العربية المتحدة",
         city: "أبوظبي",
         location: "البطين",
-        image: teacher20
+        image: ''
     }
 ]
 

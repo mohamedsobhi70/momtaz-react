@@ -25,9 +25,9 @@ const Herosection = () => {
             </div>
 
             <div className="grid grid-rows-3 grid-cols-3 gap-[30px]">
-                <div className="col-span-2 row-span-3 flex flex-col rounded-2xl overflow-hidden">
+                <div className="col-span-3 row-span-2 md:col-span-2 md:row-span-3 flex flex-col rounded-2xl overflow-hidden">
                     <div className="grow">
-                        <img src={teacher1} className="w-full h-full object-cover" width="312" height="312" alt="teacher" />
+                        <img src={teacher1} className="size-full object-cover" width="312" height="312" alt="teacher" />
                     </div>
                     <div className="p-6 flex flex-col gap-3 bg-white shrink-0">
                         <div className="flex flex-col gap-1">
@@ -55,28 +55,28 @@ const Herosection = () => {
 
 
                 <div className="col-span-1 row-span-1 relative rounded-2xl overflow-hidden">
-                        <div className="play-overlay absolute w-full h-full top-0 left-0 bg-[#0000004D] flex justify-center items-center z-[1]">
-                            <button type="button" aria-label="play Video" className="play-vid">
-                                <img src={play} width="48" height="48" alt="Play Video" />
-                            </button>
-                        </div>
-                        <img src={teacher2} className="w-full h-full object-cover" width="312" height="312" alt="teacher" />
+                    <div className="play-overlay absolute size-full top-0 left-0 bg-[#0000004D] flex justify-center items-center z-[1]">
+                        <button type="button" aria-label="play Video" className="play-vid">
+                            <img src={play} width="48" height="48" alt="Play Video" />
+                        </button>
+                    </div>
+                    <img src={teacher2} className="size-full object-cover" width="312" height="312" alt="teacher" />
                 </div>
                 <div className="col-span-1 row-span-1 relative rounded-2xl overflow-hidden">
-                        <div className="play-overlay absolute w-full h-full top-0 left-0 bg-[#0000004D] flex justify-center items-center z-[1]">
-                            <button type="button" aria-label="play Video" className="play-vid">
-                                <img src={play} width="48" height="48" alt="Play Video" />
-                            </button>
-                        </div>
-                        <img src={teacher3} className="w-full h-full object-cover" width="312" height="312" alt="teacher" />
+                    <div className="play-overlay absolute size-full top-0 left-0 bg-[#0000004D] flex justify-center items-center z-[1]">
+                        <button type="button" aria-label="play Video" className="play-vid">
+                            <img src={play} width="48" height="48" alt="Play Video" />
+                        </button>
+                    </div>
+                    <img src={teacher3} className="size-full object-cover" width="312" height="312" alt="teacher" />
                 </div>
                 <div className="col-span-1 row-span-1 relative rounded-2xl overflow-hidden">
-                        <div className="play-overlay absolute w-full h-full top-0 left-0 bg-[#0000004D] flex justify-center items-center z-[1]">
-                            <button type="button" aria-label="play Video" className="play-vid">
-                                <img src={play} width="48" height="48" alt="Play Video" />
-                            </button>
-                        </div>
-                        <img src={teacher4} className="w-full h-full object-cover" width="312" height="312" alt="teacher" />
+                    <div className="play-overlay absolute size-full top-0 left-0 bg-[#0000004D] flex justify-center items-center z-[1]">
+                        <button type="button" aria-label="play Video" className="play-vid">
+                            <img src={play} width="48" height="48" alt="Play Video" />
+                        </button>
+                    </div>
+                    <img src={teacher4} className="size-full object-cover" width="312" height="312" alt="teacher" />
                 </div>
             </div>
         </div>

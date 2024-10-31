@@ -23,22 +23,22 @@
     box-shadow: 0px 0px 0px 6px rgba(250, 248, 254, 1);
   }
   .btn-primary {
-    @apply flex justify-center items-center bg-[#090129] text-nowrap text-[#F5F8FF] hover:bg-[#3A3454] active:bg-[#3A3454] active:shadow-btn-primary-shadow transition-all duration-300 ease-in-out;
+    @apply flex justify-center cursor-pointer items-center bg-[#090129] text-nowrap text-[#F5F8FF] hover:bg-[#3A3454] active:bg-[#3A3454] active:shadow-btn-primary-shadow transition-all duration-300 ease-in-out;
   }
   .btn-secondary {
-    @apply flex justify-center items-center bg-[#EADDF9] text-nowrap text-black hover:bg-[#F1E8FB] active:bg-[#F1E8FB] active:shadow-btn-secondary-shadow transition-all duration-300 ease-in-out;
+    @apply flex justify-center cursor-pointer items-center bg-[#EADDF9] text-nowrap text-black hover:bg-[#F1E8FB] active:bg-[#F1E8FB] active:shadow-btn-secondary-shadow transition-all duration-300 ease-in-out;
   }
   .btn-tertiary {
-    @apply flex justify-center items-center bg-[#D5F379] text-nowrap text-black hover:bg-[#DDF594] active:bg-[#D5F379] active:shadow-btn-tertiary-shadow transition-all duration-300 ease-in-out;
+    @apply flex justify-center cursor-pointer items-center bg-[#D5F379] text-nowrap text-black hover:bg-[#DDF594] active:bg-[#D5F379] active:shadow-btn-tertiary-shadow transition-all duration-300 ease-in-out;
   }
   .btn-gray-secondary {
-    @apply flex justify-center items-center bg-white text-nowrap text-[#111322] border border-[#DCDFEA] hover:border-[#B9C0D4] active:border-[#DCDFEA] hover:bg-[#FCFCFD] active:bg-[#EFF1F5] disabled:bg-[#DCDFEA] disabled:text-[#B9C0D4] transition-all duration-300 ease-in-out;
+    @apply flex justify-center cursor-pointer items-center bg-white text-nowrap text-[#111322] border border-[#DCDFEA] hover:border-[#B9C0D4] active:border-[#DCDFEA] hover:bg-[#FCFCFD] active:bg-[#EFF1F5] disabled:bg-[#DCDFEA] disabled:text-[#B9C0D4] transition-all duration-300 ease-in-out;
   }
   .btn-error {
-    @apply flex justify-center items-center bg-[#E62E05] text-nowrap text-[#FEFAF5] hover:bg-[#FF4405] active:bg-[#E62E05] active:shadow-btn-error-shadow transition-all duration-300 ease-in-out;
+    @apply flex justify-center cursor-pointer items-center bg-[#E62E05] text-nowrap text-[#FEFAF5] hover:bg-[#FF4405] active:bg-[#E62E05] active:shadow-btn-error-shadow transition-all duration-300 ease-in-out;
   }
   .btn-link {
-    @apply flex justify-center items-center text-nowrap text-[#3A3454] hover:text-[#090129] active:text-[#8E8A9D] transition-all duration-300 ease-in-out;
+    @apply flex justify-center cursor-pointer items-center text-nowrap text-[#3A3454] hover:text-[#090129] active:text-[#8E8A9D] transition-all duration-300 ease-in-out;
   }
   .btn-link:hover path {
     @apply stroke-[#090129]  transition-all duration-300;

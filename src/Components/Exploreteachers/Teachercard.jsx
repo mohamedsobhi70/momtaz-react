@@ -1,17 +1,18 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import star from '../../assets/images/star.svg'
+import noimg from '../../assets/images/noimg.jpg'
 
 const Teachercard = ({ teacher }) => {
     const [isSelected, setIsSelected] = useState(false);
     const handleClick = () => { setIsSelected(!isSelected); };
     return <div className={`border  rounded-3xl p-6 flex flex-col gap-5 transition-colors delay-300 cursor-pointer ${isSelected ? "border-[#7839EE]" : "border-[#E6E6EA]"}`} onClick={handleClick}>
         <div className="teacher-card-img">
-            <img src={teacher.image} alt="teacher" className='size-full object-cover' />
+            <img src={teacher.image || noimg} alt="teacher" className='size-full object-cover' />
         </div>
         <div className="flex items-center gap-4">
             <div className="border border-[#E6E6EA] rounded-3xl overflow-hidden size-16 shrink-0">
-                <img src={teacher.image} alt="teacher" className='size-full object-cover' />
+                <img src={teacher.image || noimg} alt="teacher" className='size-full object-cover' />
             </div>
             <div className="flex flex-col gap-2">
                 <Link to={`/teacher-${teacher.id}`} className='text-[#090129] font-semibold line-clamp-1'>

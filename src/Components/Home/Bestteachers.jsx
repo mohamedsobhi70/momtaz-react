@@ -47,44 +47,44 @@ const Bestteachers = () => {
                 {
                     bestTeachers.map((teacher) => {
                         return <SwiperSlide key={teacher.id} className='!h-auto lg:p-4 !flex flex-col lg:gap-6 rounded-xl lg:rounded-3xl border lg:border-none border-[#E6E6EA] overflow-hidden hover:bg-white !transition-colors !duration-300 cursor-grab'>
-                                <Link to='' className="lg:rounded-2xl overflow-hidden relative">
-                                    <span className="absolute w-full h-full top-0 left-0 bg-[#00000033]"></span>
-                                    {teacher.img ?
-                                        <img src={teacher.img} className="w-full h-full object-cover" width="200" height="200" alt="teacher" />
-                                        : <img src={noimg} className="w-full h-full object-cover" width="600" height="600" alt="no-image" />}
+                            <Link to='' className="lg:rounded-2xl overflow-hidden relative">
+                                <span className="absolute size-full top-0 left-0 bg-[#00000033]"></span>
+                                {teacher.img ?
+                                    <img src={teacher.img} className="size-full object-cover" width="200" height="200" alt="teacher" />
+                                    : <img src={noimg} className="size-full object-cover" width="600" height="600" alt="no-image" />}
 
-                                </Link>
+                            </Link>
 
-                                {/* <!-- teacher informations  --> */}
-                                <div className="flex flex-col gap-2 lg:gap-3 p-4 lg:p-0 bg-white lg:bg-transparent grow">
-                                    <div className="flex justify-between items-center">
-                                        <h2 className="text-[#111322] text-base lg:text-xl leading-normal lg:leading-normal font-semibold truncate">
-                                            <Link to=''>
-                                                {teacher.name}
-                                            </Link>
-                                        </h2>
-                                        <span className="w-6 h-6">
-                                            <img src={verifyTeacher} width="24" height="24" alt="verify-teacher" />
-                                        </span>
-                                    </div>
-                                    <p className="text-[#5D6B98] text-xs lg:text-sm leading-normal lg:leading-5 font-medium">
-                                        🧬 علوم وفيزياء
-                                    </p>
-                                    <p className="text-[#5D6B98] text-xs lg:text-sm leading-normal lg:leading-5 font-medium">
-                                        المراحل: {teacher.stages.join(" ، ")}
-
-                                    </p>
-                                    <p className="flex items-center gap-3 mt-auto">
-                                        <span className="flex items-center gap-1 lg:gap-2 text-[#111322] text-sm lg:text-base leading-normal lg:leading-normal font-semibold">
-                                            <img src={star} width="24" height="24" alt="star" />
-                                            {teacher.rating}
-                                        </span>
-                                        <span className="text-[#7D89B0] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                            ({teacher.rateno} تقييم)
-
-                                        </span>
-                                    </p>
+                            {/* <!-- teacher informations  --> */}
+                            <div className="flex flex-col gap-2 lg:gap-3 p-4 lg:p-0 bg-white lg:bg-transparent grow">
+                                <div className="flex justify-between items-center">
+                                    <h2 className="text-[#111322] text-base lg:text-xl leading-normal lg:leading-normal font-semibold truncate">
+                                        <Link to=''>
+                                            {teacher.name}
+                                        </Link>
+                                    </h2>
+                                    <span className="w-6 h-6">
+                                        <img src={verifyTeacher} width="24" height="24" alt="verify-teacher" />
+                                    </span>
                                 </div>
+                                <p className="text-[#5D6B98] text-xs lg:text-sm leading-normal lg:leading-5 font-medium">
+                                    🧬 علوم وفيزياء
+                                </p>
+                                <p className="text-[#5D6B98] text-xs lg:text-sm leading-normal lg:leading-5 font-medium">
+                                    المراحل: {teacher.stages.join(" ، ")}
+
+                                </p>
+                                <p className="flex items-center gap-3 mt-auto">
+                                    <span className="flex items-center gap-1 lg:gap-2 text-[#111322] text-sm lg:text-base leading-normal lg:leading-normal font-semibold">
+                                        <img src={star} width="24" height="24" alt="star" />
+                                        {teacher.rating}
+                                    </span>
+                                    <span className="text-[#7D89B0] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
+                                        ({teacher.rateno} تقييم)
+
+                                    </span>
+                                </p>
+                            </div>
                         </SwiperSlide>
                     })
                 }
