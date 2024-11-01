@@ -70,8 +70,8 @@ const Support = () => {
                             <h3 className="text-xl font-semibold text-white">
                                 الهاتف
                             </h3>
-                            <a className="text-[#7D89B0] text-xs lg:text-sm font-medium" href="tel:+1(012) 345 678 90">
-                                +1(012) 345 678 90
+                            <a className="text-[#7D89B0] text-xs lg:text-sm font-medium" href="tel:+201550417652">
+                                +201550417652
                             </a>
                         </div>
                     </div>
@@ -109,8 +109,8 @@ const Support = () => {
                             <h3 className="text-xl font-semibold text-white">
                                 البريد الإلكترونى
                             </h3>
-                            <a className="text-[#7D89B0] text-xs lg:text-sm font-medium" href="mailto:example@email.com">
-                                example@email.com
+                            <a className="text-[#7D89B0] text-xs lg:text-sm font-medium" href="mailto:sobhi7070@gmail.com">
+                                sobhi7070@gmail.com
                             </a>
                         </div>
                     </div>

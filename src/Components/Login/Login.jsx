@@ -65,7 +65,7 @@ const Login = () => {
                                         <img src={showPass} width="20" height="20" alt="username" onClick={() => setShowPassword(!showPassword)}
                                             className="absolute left-3 top-1/2 -translate-y-1/2 cursor-pointer show-password" />
                                     </div>
-                                    <Link to="forget-password"
+                                    <Link to="/forget-password"
                                         className="text-[#7D89B0] text-xs leading-normal text-left">
                                         نسيت كلمة المرور؟
                                     </Link>
@@ -109,8 +109,7 @@ const Login = () => {
                             <span className="text-[#5D6B98] text-sm leading-normal font-medium">
                                 ليس لديك حساب ؟
                             </span>
-                            <Link to="register"
-                                className="link-btn group flex items-center gap-2 text-[#3A3454] text-xs leading-normal font-medium">
+                            <Link to="/register" className="btn-link btn-sm p-0">
                                 تسجيل حساب جديد
                             </Link>
                         </div>
@@ -124,12 +123,12 @@ const Login = () => {
             <footer className="p-8 hidden lg:flex items-center gap-8 justify-between">
                 <ul className="flex items-center gap-6">
                     <li>
-                        <Link to='/' className="text-[#5D6B98] text-sm leading-normal">
+                        <Link to='/terms' className="text-[#5D6B98] text-sm leading-normal">
                             الشروط والأحكام
                         </Link>
                     </li>
                     <li>
-                        <Link to='/' className="text-[#5D6B98] text-sm leading-normal">
+                        <Link to='/privacy-policy' className="text-[#5D6B98] text-sm leading-normal">
                             سياسة الخصوصية
                         </Link>
                     </li>
