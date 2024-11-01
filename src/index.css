@@ -106,7 +106,7 @@
 
   /* Subjects  */
   .sub-icon {
-    @apply w-full h-[146px] flex items-center justify-center bg-red-50 rounded-[20px];
+    @apply w-full aspect-square flex items-center justify-center bg-red-50 rounded-[20px];
   }
   /* End Subjects  */
 
