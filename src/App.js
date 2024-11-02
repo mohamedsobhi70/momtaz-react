@@ -9,11 +9,13 @@ import Exploreteachers from "./Components/Exploreteachers/Exploreteachers";
 import Support from "./Components/Support/Support";
 import Login from "./Components/Login/Login";
 import Register from "./Components/Register/Register";
+import RegLayout from "./Components/Globals/RegLayout";
+import ForgetPassword from "./Components/ForgetPassword/ForgetPassword";
 
 function App() {
   const location = useLocation();
 
-  const hideHeaderFooter = location.pathname === '/login' || location.pathname === '/register';
+  const hideHeaderFooter = location.pathname === '/login' || location.pathname === '/register' || location.pathname === '/forget-password';
 
   return (
     <>
@@ -25,8 +27,9 @@ function App() {
           <Route path="/for-teachers" element={<Forteachers />} />
           <Route path="/explore-teacher" element={<Exploreteachers />} />
           <Route path="/support" element={<Support />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<RegLayout><Login /></RegLayout>} />
+          <Route path="/register" element={<RegLayout><Register /></RegLayout>} />
+          <Route path="/forget-password" element={<RegLayout><ForgetPassword /></RegLayout>} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
