@@ -15,7 +15,7 @@ const Teachercard = ({ teacher }) => {
                 <img src={teacher.image || noimg} alt="teacher" className='size-full object-cover' />
             </div>
             <div className="flex flex-col gap-2">
-                <Link to={`/teacher-${teacher.id}`} className='text-[#090129] font-semibold line-clamp-1'>
+                <Link to={`/teacher/${teacher.id}`} className='text-[#090129] font-semibold line-clamp-1'>
                     {teacher.name}
                 </Link>
                 <div className="flex items-center gap-1">

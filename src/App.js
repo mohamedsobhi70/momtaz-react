@@ -27,7 +27,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/for-teachers" element={<Forteachers />} />
           <Route path="/explore-teacher" element={<Exploreteachers />} />
-          <Route path="/teacher" element={<Teacher />} />
+          <Route path="/teacher/:id" element={<Teacher />} />
           <Route path="/support" element={<Support />} />
           <Route path="/login" element={<RegLayout><Login /></RegLayout>} />
           <Route path="/register" element={<RegLayout><Register /></RegLayout>} />
