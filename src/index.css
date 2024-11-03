@@ -91,10 +91,10 @@
 
   /* Header  */
   .nav-link {
-    @apply py-4 xl:py-0 border-b border-[#E6E6EA] xl:border-none relative font-medium text-[#5A5570] hover:text-[#090129] xl:hover:pb-2 transition-all duration-300 ease-in-out before:hidden xl:before:block xl:hover:before:bg-[#D1B6F1] xl:before:absolute xl:before:content-[''] xl:before:bottom-0 xl:before:left-1/2 xl:before:-translate-x-1/2 before:w-6 before:h-1 before:bg-transparent before:rounded-full flex items-center gap-4;
+    @apply py-4 xl:py-0 border-b border-[#E6E6EA] xl:border-none relative font-medium text-[#5A5570] hover:before:delay-100 hover:text-[#090129] before:transition-all xl:hover:pb-2 transition-all duration-300 ease-in-out before:hidden xl:before:block xl:hover:before:bg-[#D1B6F1] xl:before:absolute xl:before:content-[''] xl:before:bottom-0 xl:before:left-1/2 xl:before:-translate-x-1/2 before:w-0 hover:before:w-6 before:h-1 before:bg-transparent before:rounded-full flex items-center gap-4;
   }
   .nav-link.active {
-    @apply text-[#090129] xl:pb-2 xl:before:bg-[#D1B6F1];
+    @apply text-[#090129] xl:pb-2 xl:before:bg-[#D1B6F1]  before:duration-200  before:delay-100 before:w-6;
   }
   .mobile-menu {
     @apply fixed xl:static size-full max-h-full lg:size-auto bg-white z-50 inset-0 grow flex flex-col opacity-0 invisible xl:visible xl:opacity-100 transition-all duration-300 ease-in-out;
@@ -122,7 +122,15 @@
 
   /* Teacher Card */
   .teacher-card-img {
-    @apply overflow-hidden aspect-[3/4] rounded-2xl relative before:content-[''] before:absolute before:size-full before:inset-0 before:bg-black before:opacity-30;
+    @apply overflow-hidden aspect-video rounded-2xl relative before:content-[''] before:absolute before:size-full before:inset-0 before:bg-black before:opacity-30;
   }
   /* End Teacher Card */
+
+  .reg-swiper-pagination .swiper-pagination-bullet {
+    @apply bg-[#5D6B98] w-10 h-1.5 rounded-full opacity-100 !m-0;
+  }
+  .reg-swiper-pagination
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    @apply bg-[#D5F379];
+  }
 }
