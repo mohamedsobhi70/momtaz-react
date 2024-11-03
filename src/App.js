@@ -11,6 +11,7 @@ import Login from "./Components/Login/Login";
 import Register from "./Components/Register/Register";
 import RegLayout from "./Components/Globals/RegLayout";
 import ForgetPassword from "./Components/ForgetPassword/ForgetPassword";
+import Teacher from "./Components/Teacher/Teacher";
 
 function App() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/for-teachers" element={<Forteachers />} />
           <Route path="/explore-teacher" element={<Exploreteachers />} />
+          <Route path="/teacher" element={<Teacher />} />
           <Route path="/support" element={<Support />} />
           <Route path="/login" element={<RegLayout><Login /></RegLayout>} />
           <Route path="/register" element={<RegLayout><Register /></RegLayout>} />
