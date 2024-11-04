@@ -1,6 +1,5 @@
 import React from "react";
 import CountUp from "react-countup";
-
 const Numbers = () => {
     const ourNums = [
         { id: "1", num: "2342", type: "حصة في مختلف المواد" },
@@ -9,7 +8,8 @@ const Numbers = () => {
 
     return <section className="bg-[#EADDF9] py-12">
         <div className="container flex flex-col gap-6">
-            <h2 className="text-center text-black text-2xl font-medium">
+            <h2
+                className="text-center text-black text-2xl font-medium">
                 أرقامنا في صناعة تعليم أفضل.
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-0">

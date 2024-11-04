@@ -1,8 +1,10 @@
 import { Link, useParams } from "react-router-dom";
 import { teachers } from '../../data/dummy';
 import noPic from '../../assets/images/noimg.jpg'
+import poster from '../../assets/images/about-us.jpeg'
 import NotFound from "../Globals/NotFound";
 import star from '../../assets/images/star.svg'
+import vid from '../../assets/images/vid.mp4'
 
 const Teacher = () => {
     const { id } = useParams();
@@ -54,7 +56,7 @@ const Teacher = () => {
                             مدرس {teacherItm.subjects.join(' و ')}
                         </p>
                     </div>
-                    <div className="p-8 lg:p-10 flex flex-col gap-6 lg:gap-4 bg-[#F9F9FB] rounded-2xl lg:rounded-3xl">
+                    <div className="p-8 lg:p-10 flex flex-col gap-6 bg-[#F9F9FB] rounded-2xl lg:rounded-3xl">
                         <h2 className="text-[#090129] text-base lg:text-xl leading-normal lg:leading-normal font-semibold lg:font-medium">
                             نبذة تعريفية
                         </h2>
@@ -65,6 +67,9 @@ const Teacher = () => {
                         <p className="text-[#667085] lg:text-[#5A5570] text-base leading-[180%]">
                             {teacherItm.Introduction}
                         </p>
+                        <video controls poster={poster} className="w-full object-cover aspect-video">
+                            <source src={teacherItm.video || vid} type="video/mp4" />
+                        </video>
                     </div>
 
                     <div className="p-8 lg:p-10 flex flex-col gap-6 lg:gap-4 bg-[#F9F9FB] rounded-2xl lg:rounded-3xl">
