@@ -7,19 +7,14 @@ import nxt from '../../assets/images/left-arrow.svg'
 import star from '../../assets/images/star.svg'
 import verifyTeacher from '../../assets/images/verify-teacher.svg'
 import noimg from '../../assets/images/noimg.jpg'
-import teacher1 from '../../assets/images/tacher-1.png'
-import teacher2 from '../../assets/images/tacher-2.png'
-import teacher3 from '../../assets/images/tacher-3.png'
-
+import { teachers } from '../../data/dummy';
 const Bestteachers = () => {
 
-    const bestTeachers = [
-        { id: 1, name: "أ/ محمد مسعد خالد", tags: 'علوم وفيزياء', stages: ["الإبتدائية", "المتوسطة"], rating: 5, rateno: 412, img: teacher1 },
-        { id: 2, name: "أ/ محمد خالد مسعد", tags: 'علوم وكيمياء', stages: ["الثانويه", "المتوسطة"], rating: 4.2, rateno: 421 },
-        { id: 3, name: "أ/ مسعد محمد خالد", tags: 'رياضيات وفيزياء', stages: ["الإبتدائية", "الثانوية"], rating: 4.8, rateno: 142, img: teacher2 },
-        { id: 4, name: "أ/ خالد مسعد محمد", tags: 'رياضيات', stages: ["الإبتدائية", "الثانوية"], rating: 3.8, rateno: 142, img: teacher3 },
-        { id: 5, name: "أ/ خالد مسعد محمد", tags: 'كيمياء', stages: ["الإبتدائية"], rating: 2.8, rateno: 12 },
-    ]
+    // to get the best 8 teacher from eachers array 
+    // first sort the array and
+    // then get the first 8 elements by slice array function
+    const bestTeachers = teachers.sort((a, b) => b.rate - a.rate).slice(0, 8);
+
     return <section className='bg-[#F9F9FB] py-20'>
         <div className="container flex flex-col gap-12">
 
@@ -47,19 +42,18 @@ const Bestteachers = () => {
                 {
                     bestTeachers.map((teacher) => {
                         return <SwiperSlide key={teacher.id} className='!h-auto lg:p-4 !flex flex-col lg:gap-6 rounded-xl lg:rounded-3xl border lg:border-none border-[#E6E6EA] overflow-hidden hover:bg-white !transition-colors !duration-300 cursor-grab'>
-                            <Link to='' className="lg:rounded-2xl overflow-hidden relative">
+                            <Link to={`teacher/${teacher.id}`} className="lg:rounded-2xl overflow-hidden relative">
                                 <span className="absolute size-full top-0 left-0 bg-[#00000033]"></span>
-                                {teacher.img ?
-                                    <img src={teacher.img} className="size-full object-cover" width="200" height="200" alt="teacher" />
-                                    : <img src={noimg} className="size-full object-cover" width="600" height="600" alt="no-image" />}
-
+                                {/* check if the teacher has an image or not */}
+                                <img src={teacher.image || noimg} className="size-full object-cover" width="200" height="200" alt="teacher" />
+                               
                             </Link>
 
                             {/* <!-- teacher informations  --> */}
                             <div className="flex flex-col gap-2 lg:gap-3 p-4 lg:p-0 bg-white lg:bg-transparent grow">
                                 <div className="flex justify-between items-center">
                                     <h2 className="text-[#111322] text-base lg:text-xl leading-normal lg:leading-normal font-semibold truncate">
-                                        <Link to=''>
+                                        <Link to={`teacher/${teacher.id}`}>
                                             {teacher.name}
                                         </Link>
                                     </h2>
@@ -68,19 +62,18 @@ const Bestteachers = () => {
                                     </span>
                                 </div>
                                 <p className="text-[#5D6B98] text-xs lg:text-sm leading-normal lg:leading-5 font-medium">
-                                    🧬 علوم وفيزياء
+                                    🧬{teacher.subjects.join(" و ")}
                                 </p>
                                 <p className="text-[#5D6B98] text-xs lg:text-sm leading-normal lg:leading-5 font-medium">
-                                    المراحل: {teacher.stages.join(" ، ")}
-
+                                    المراحل: {teacher.grades.join(" ، ")}
                                 </p>
                                 <p className="flex items-center gap-3 mt-auto">
                                     <span className="flex items-center gap-1 lg:gap-2 text-[#111322] text-sm lg:text-base leading-normal lg:leading-normal font-semibold">
                                         <img src={star} width="24" height="24" alt="star" />
-                                        {teacher.rating}
+                                        {teacher.rate.toFixed(1)}
                                     </span>
                                     <span className="text-[#7D89B0] text-xs lg:text-sm leading-normal lg:leading-normal font-medium">
-                                        ({teacher.rateno} تقييم)
+                                        ({teacher.ratingno} تقييم)
 
                                     </span>
                                 </p>
@@ -98,7 +91,7 @@ const Bestteachers = () => {
                         <img src={nxt} alt="next" className='ltr:rotate-180' width='20' height='20' />
                     </button>
                 </div>
-                <Link to='teachers' className='btn-gray-secondary btn-md'>
+                <Link to='/explore-teacher' className='btn-gray-secondary btn-md'>
                     تصفح جميع المعلمين
                 </Link>
             </div>

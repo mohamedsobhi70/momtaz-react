@@ -4,8 +4,6 @@ import reg from '../../assets/images/register.png';
 import cuate from '../../assets/images/cuate.png';
 import rightArrow from '../../assets/images/right-arrow.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination } from 'swiper/modules';

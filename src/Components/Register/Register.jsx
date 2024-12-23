@@ -10,7 +10,7 @@ import { useState } from "react";
 const Register = () => {
     const [showPassword, setShowPassword] = useState(false);
 
-    const handleLogin = (e) => {
+    const handleRegister = (e) => {
         e.preventDefault()
     }
     return <>
@@ -22,7 +22,7 @@ const Register = () => {
                 سجل حسابك وأنضم الي ألالاف المعلمين علي منصتنا.
             </p>
         </div>
-        <form onSubmit={handleLogin}>
+        <form onSubmit={handleRegister}>
             <div className="flex flex-col lg:gap-6">
                 <div className="flex flex-col gap-4 lg:gap-8 py-4 lg:py-0">
                     <div className="flex flex-col gap-2">

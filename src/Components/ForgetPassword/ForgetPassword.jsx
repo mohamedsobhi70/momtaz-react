@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import phoneIcn from '../../assets/images/phone-icon.svg';
 
 const ForgetPassword = () => {
+    const handleResetPass = (e) => {
+        e.preventDefault()
+    }
     return <>
         <div className="flex flex-col gap-2 lg:gap-3 py-6 lg:py-0">
             <h2 className="text-[#111322] text-2xl lg:text-[32px] leading-normal lg:leading-normal font-semibold">
@@ -12,7 +15,7 @@ const ForgetPassword = () => {
                 من فضلك أضف بريدك الإلكترونى حتي يمكننا الأستمرار.
             </p>
         </div>
-        <form >
+        <form  onSubmit={handleResetPass}>
             <div className="flex flex-col lg:gap-6">
                 <div className="flex flex-col gap-4 lg:gap-8 py-4 lg:py-0">
                     <div className="flex flex-col gap-2">

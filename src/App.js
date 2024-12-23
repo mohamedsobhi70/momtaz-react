@@ -16,7 +16,10 @@ import Teacher from "./Components/Teacher/Teacher";
 function App() {
   const location = useLocation();
 
-  const hideHeaderFooter = location.pathname === '/login' || location.pathname === '/register' || location.pathname === '/forget-password';
+  const hideHeaderFooter =
+    location.pathname === '/login'
+    || location.pathname === '/register'
+    || location.pathname === '/forget-password';
 
   return (
     <>

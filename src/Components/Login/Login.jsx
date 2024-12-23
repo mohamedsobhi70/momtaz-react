@@ -24,6 +24,7 @@ const Login = () => {
         <form onSubmit={handleLogin}>
             <div className="flex flex-col lg:gap-6">
                 <div className="flex flex-col gap-4 lg:gap-8 py-4 lg:py-0">
+          
                     <div className="flex flex-col gap-2">
                         <label htmlFor="email-account" className="text-[#4A5578] text-xs leading-normal font-medium">
                             البريد الإلكترونى
@@ -36,9 +37,11 @@ const Login = () => {
                     </div>
 
                     <div className="flex flex-col gap-2">
+                        
                         <label htmlFor="password" className="text-[#4A5578] text-xs leading-normal font-medium">
                             كلمة المرور
                         </label>
+
                         <div className="flex flex-col gap-1">
                             <div className="relative">
                                 <img src={lock} width="20" height="20" alt="username"

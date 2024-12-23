@@ -10,17 +10,15 @@ const Teacher = () => {
     const { id } = useParams();
     const teacherItm = teachers.find((t) => +id === +t.id);
 
-    console.log(teacherItm);
-
     return <>
         {teacherItm ? <section className="py-16">
             <div className="container grid grid-cols-1 lg:grid-cols-3 gap-8">
                 <aside className="flex flex-col gap-6">
-                    <div className="aspect-[35/48] overflow-hidden rounded-2xl lg:rounded-3xl  sticky top-24">
+                    <div className="aspect-[35/48] overflow-hidden rounded-2xl lg:rounded-3xl sticky top-24">
                         <img src={teacherItm.image || noPic} className="size-full object-cover" alt="teacher profile pic" />
                     </div>
 
-                    <div className="border border-t-[6px] backdrop:blur-sm border-[#D1B6F1] bg-[#faf8fee0] rounded-2xl lg:rounded-3xl px-[30px] py-8 lg:p-8 flex flex-col gap-6 w-full sticky bottom-10">
+                    <div className="border border-t-[6px] sticky top-24 backdrop:blur-sm border-[#D1B6F1] bg-[#faf8fee0] rounded-2xl lg:rounded-3xl px-[30px] py-8 lg:p-8 flex flex-col gap-6 w-full">
                         <div className="flex flex-col gap-2">
                             <h2 className="text-[#090129] text-base lg:text-2xl leading-normal lg:leading-normal font-semibold lg:font-medium">
                                 أحجز الأن
@@ -134,8 +132,6 @@ const Teacher = () => {
                 </div>
             </div>
         </section> : <NotFound />}
-
-
     </>
 };
 
