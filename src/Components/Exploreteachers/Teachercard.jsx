@@ -6,7 +6,7 @@ import noimg from '../../assets/images/noimg.jpg'
 const Teachercard = ({ teacher }) => {
     const [isSelected, setIsSelected] = useState(false);
     const handleClick = () => { setIsSelected(!isSelected); };
-    return <div className={`border  rounded-3xl p-6 flex flex-col gap-5 transition-colors delay-300 cursor-pointer ${isSelected ? "border-[#7839EE]" : "border-[#E6E6EA]"}`} onClick={handleClick}>
+    return <div className={`border rounded-3xl p-6 flex flex-col gap-5 transition-colors delay-300 cursor-pointer ${isSelected ? "border-[#7839EE]" : "border-[#E6E6EA]"}`} onClick={handleClick}>
         <div className="teacher-card-img">
             <img src={teacher.image || noimg} alt="teacher" className='size-full object-cover' />
         </div>

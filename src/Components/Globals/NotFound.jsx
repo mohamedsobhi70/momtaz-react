@@ -22,7 +22,6 @@ const NotFound = () => {
                 </Link>
             </div>
         </div>
-
     </section>;
 };
 

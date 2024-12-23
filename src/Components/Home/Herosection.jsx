@@ -6,7 +6,20 @@ import shape4 from '../../assets/images/hero-shape-4.png'
 import shape5 from '../../assets/images/hero-shape-5.png'
 import shape6 from '../../assets/images/hero-shape-6.png'
 import shape7 from '../../assets/images/hero-shape-7.png'
+import { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+import { setSearchQuery } from '../../slices/Searchslice'
+
 const Herosection = () => {
+    const [searchTerm, setSearchTerm] = useState('');
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const handleSearch = () => {
+        dispatch(setSearchQuery(searchTerm));
+        navigate('/search-results');
+    };
     return <section className="min-h-[calc(100vh-66px)] xl:min-h-[calc(100vh-70px)] bg-[#090129] relative flex items-center overflow-hidden">
         <img src={shape1} alt="shape" className='absolute hidden lg:block left-3/4 top-16 opacity-10' />
         <img src={shape2} alt="shape" className='absolute hidden lg:block right-1/4 top-80' />
@@ -35,8 +48,11 @@ const Herosection = () => {
                 </div>
                 <div className="bg-white rounded-2xl p-2 ps-5 flex items-center gap-3">
                     <img src={search} width="24" height="24" alt="Search Icon" />
-                    <input type="text" className="grow focus:outline-0 focus:ring-0 border-none text-[#111322] text-sm " name="search-teacher" id="search-teacher" placeholder="أبحث عن أسم المدرس أو التخصص أو المرحلة التعليمية" />
-                    <button className="btn-tertiary btn-md px-10">
+                    <input type="text" className="grow focus:outline-0 focus:ring-0 border-none text-[#111322] text-sm "
+                        name="search-teacher" id="search-teacher" placeholder="أبحث عن أسم المدرس أو التخصص أو المرحلة التعليمية"
+                        onChange={(e) => setSearchTerm(e.target.value)}
+                    />
+                    <button className="btn-tertiary btn-md px-10" onClick={handleSearch}>
                         أبحث
                     </button>
                 </div>
