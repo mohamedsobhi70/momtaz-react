@@ -8,7 +8,10 @@ import notfound from '../../assets/images/404.png'
 
 const Searchresults = () => {
     const searchQuery = useSelector((state) => state.search.query);
-    const searchRes = teachers.filter(teacher => teacher.name.includes(searchQuery));
+    const searchRes = teachers.filter(teacher => teacher.name.includes(searchQuery)
+        || teacher.subjects.some(subject => subject.includes(searchQuery))
+        || teacher.grades.some(grade => grade.includes(searchQuery))
+    );
 
     return <section className="py-20">
         {
@@ -59,7 +62,8 @@ const Searchresults = () => {
                 <img src={notfound} width='592' height='395' alt="page-not-found" />
                 <div className="flex flex-col gap-3">
                     <h2 className="section-title text-center font-black capitalize">
-                        آسفين! لا يوجد نتائج تطابق بحثك الخاص بـ  " {searchQuery} " حاليا
+                        آسفين! لا يوجد نتائج تطابق بحثك الخاص بـ 
+                         "<span className="text-[#E62E05]"> {searchQuery} </span>" حاليا
                     </h2>
                 </div>
                 <div className="flex flex-col md:flex-row gap-3 lg:gap-4">
