@@ -6,19 +6,26 @@ import shape4 from '../../assets/images/hero-shape-4.png'
 import shape5 from '../../assets/images/hero-shape-5.png'
 import shape6 from '../../assets/images/hero-shape-6.png'
 import shape7 from '../../assets/images/hero-shape-7.png'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { setSearchQuery } from '../../slices/Searchslice'
 
 const Herosection = () => {
     const [searchTerm, setSearchTerm] = useState('');
+    const [srchIsEmpty, setSrchIsEmpty] = useState(false);
     const dispatch = useDispatch();
     const navigate = useNavigate();
-
+    const searshinpt = useRef();
     const handleSearch = () => {
-        dispatch(setSearchQuery(searchTerm));
-        navigate('/search-results');
+        if (searchTerm.length) {
+            dispatch(setSearchQuery(searchTerm));
+            navigate('/search-results');
+        }
+        else {
+            searshinpt.current.focus();
+            setSrchIsEmpty(true)
+        }
     };
     return <section className="min-h-[calc(100vh-66px)] xl:min-h-[calc(100vh-70px)] bg-[#090129] relative flex items-center overflow-hidden">
         <img src={shape1} alt="shape" className='absolute hidden lg:block left-3/4 top-16 opacity-10' />
@@ -46,11 +53,13 @@ const Herosection = () => {
                         لدينا باقة من أفضل المعلمين حول المملكة  لجميع التخصصات ومختلف الأعمار ، إحجز الأن معهم.
                     </p>
                 </div>
-                <div className="bg-white rounded-2xl p-2 ps-5 flex items-center gap-3">
+                <div className={`bg-white rounded-2xl p-2 ps-5 flex items-center gap-3 border ${srchIsEmpty ? "border-[#E62E05]" : "border-transparent"}`}>
                     <img src={search} width="24" height="24" alt="Search Icon" />
-                    <input type="text" className="grow focus:outline-0 focus:ring-0 border-none text-[#111322] text-sm "
-                        name="search-teacher" id="search-teacher" placeholder="أبحث عن أسم المدرس أو التخصص أو المرحلة التعليمية"
+                    <input ref={searshinpt} type="text" className={`bg-transparent grow focus:outline-0 focus:ring-0 border-none text-[#111322] text-sm ${srchIsEmpty ? "placeholder:text-[#E62E05] animate-pulse":"placeholder:text-[#6b7280]"}`}
+                        name="search-teacher" id="search-teacher" 
+                        placeholder={srchIsEmpty ? "من فضلك قم بكتابة ما تريد هنا أولا" :"أبحث عن أسم المدرس أو التخصص أو المرحلة التعليمية"}
                         onChange={(e) => setSearchTerm(e.target.value)}
+                        onKeyDown={() => setSrchIsEmpty(false)}
                     />
                     <button className="btn-tertiary btn-md px-10" onClick={handleSearch}>
                         أبحث
